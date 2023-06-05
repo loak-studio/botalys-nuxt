@@ -1,5 +1,5 @@
 <template>
   <section>
-    <Header/>
+    <Header :isFrontpage="true"/>
   </section>
 </template>

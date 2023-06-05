@@ -1,5 +1,5 @@
 <template>
-  <component :class="'button text bold ' + `button__${color}`" :to="href" :is="href ? NuxtLink:'button'">
+  <component :class="'button text bold ' + `button--${color}`" :to="href" :is="href ? NuxtLink:'button'">
     <slot />
   </component>
 </template>
@@ -22,45 +22,51 @@ const { href, color } = defineProps({
   padding: 12px 40px;
   display: inline-block;
   border: 1px solid;
-  transition: background 300ms ease-in-out, border 300ms ease-in-out,color 300ms ease-in-out;
-  &__green {
+  transition: background 300ms ease-in-out, border 300ms ease-in-out, color 300ms ease-in-out;
+
+  &--green {
     background: var(--dark-jungle-green);
     border-color: var(--dark-jungle-green);
     color: var(--half-spanish-white);
-    &:hover{
+
+    &:hover {
       background: var(--mikado-yellow);
       color: var(--dark-jungle-green);
       border-color: var(--mikado-yellow);
     }
   }
-  &__yellow {
+
+  &--yellow {
     background: var(--half-spanish-white);
     border-color: var(--dark-jungle-green);
     color: var(--dark-jungle-green);
 
-    &:hover{
+    &:hover {
       background: var(--nandor);
       color: var(--half-spanish-white);
       border-color: var(--nandor);
     }
   }
-  &__outline{
+
+  &--outline {
     border-color: var(--half-spanish-white);
     color: var(--half-spanish-white);
-    &:hover{
+
+    &:hover {
       background: var(--half-spanish-white);
       color: var(--dark-jungle-green);
     }
   }
-  &__header{
+
+  &--header {
     background: var(--dark-jungle-green);
     border-color: var(--dark-jungle-green);
     color: var(--mikado-yellow);
-    &:hover{
+
+    &:hover {
       background-color: var(--mikado-yellow);
       color: var(--dark-jungle-green);
       border-color: var(--mikado-yellow)
     }
   }
-}
-</style>
+}</style>

@@ -1,3 +1,4 @@
 export default {
-  halfSpanishWhite:'#E6E2C9'
+  halfSpanishWhite:'#E6E2C9',
+  darkJungleGreen:'#18201D'
 }
