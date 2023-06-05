@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://botalys.com/sitemap-index.xml
