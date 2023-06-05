@@ -30,16 +30,18 @@ const { href, color } = defineProps({
     &:hover{
       background: var(--mikado-yellow);
       color: var(--dark-jungle-green);
+      border-color: var(--mikado-yellow);
     }
   }
   &__yellow {
     background: var(--half-spanish-white);
-    border-color: var(--half-spanish-white);
+    border-color: var(--dark-jungle-green);
     color: var(--dark-jungle-green);
 
     &:hover{
       background: var(--nandor);
       color: var(--half-spanish-white);
+      border-color: var(--nandor);
     }
   }
   &__outline{
