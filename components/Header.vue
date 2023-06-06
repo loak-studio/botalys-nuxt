@@ -3,8 +3,6 @@ import colors from '../utils/colors';
 const { isFrontpage } = defineProps({ isFrontpage: Boolean })
 const displaySubnavigation = ref<any>({})
 const displayMobileNavigation = ref(false)
-
-
 const navItems = [
   {
     label: 'Home',
@@ -32,7 +30,7 @@ const navItems = [
     ]
   },
   {
-    label: 'About us',
+    label: 'About Us',
     href: '/about-us/'
   }
 ]
@@ -83,7 +81,7 @@ watch(() => route.fullPath, () => {
               </button>
               <ul
                 :class="'header__subnavigation ' + (displaySubnavigation[item.label] ? '' : 'header__subnavigation--hidden')">
-                <li v-for="child in item.childs">
+                <li v-for="(child,index) in item.childs" :key="index">
                   <NuxtLink class="text header__subnavigation-item" :to="child.href">
                     {{ child.label }}</NuxtLink>
                 </li>
@@ -102,6 +100,7 @@ watch(() => route.fullPath, () => {
 
 <style lang="scss">
 .header {
+  z-index: 10;
   border-bottom: 2px solid var(--nandor);
   position: relative;
   background: var(--half-spanish-white);
@@ -193,7 +192,7 @@ watch(() => route.fullPath, () => {
 .header.header--transparent {
   border-bottom-color: var(--half-spanish-white);
   background-color: transparent;
-  .text{
+  nav .text{
     color: var(--half-spanish-white)
   }
   .header__subnavigation-item{
@@ -333,8 +332,11 @@ watch(() => route.fullPath, () => {
     border-bottom-color: var(--dark-jungle-green);
     background-color: var(--half-spanish-white);
     transition: background 300ms ease-in-out;
-    .text{
-      color: var(--dark-jungle-green)
+    nav .text{
+      color: var(--dark-jungle-green);
+      &:hover{
+        color: var(--dark-jungle-green);
+      }
     }
     .header__toggle-menu{
       color: var(--dark-jungle-green);

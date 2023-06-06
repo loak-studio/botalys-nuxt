@@ -1,6 +1,6 @@
 <template>
   <IndexHero/>
-  <p>index</p>
+  <p style="height: 200px">index</p>
 </template>
 
 <script setup lang="ts">
