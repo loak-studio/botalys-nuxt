@@ -107,6 +107,7 @@ const navLinks = [
 }
 .footer__column-1{
   width: 56%;
+  border-right: 2px solid var(--half-spanish-white);
 }
 .footer__column-2{
   width: 44%;
