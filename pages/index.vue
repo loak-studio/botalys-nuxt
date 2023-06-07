@@ -1,6 +1,7 @@
 <template>
   <IndexHero/>
-  <p style="height: 200px">index</p>
+  <p style="height: 200vh">index</p>
+  <Footer/>
 </template>
 
 <script setup lang="ts">

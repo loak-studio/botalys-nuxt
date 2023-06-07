@@ -47,15 +47,3 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
-a{
-  text-decoration: none;
-}
-button{
-  background: none;
-  border:none;
-}
-@media (max-width: 1000px) {
-  body.no-scroll{
-    overflow: hidden;
-  }
-}

@@ -1,5 +1,4 @@
 <script setup lang="ts">
-import colors from '../utils/colors';
 const { isFrontpage } = defineProps({ isFrontpage: Boolean })
 const displaySubnavigation = ref<any>({})
 const displayMobileNavigation = ref(false)
@@ -49,7 +48,6 @@ const route = useRoute()
 watch(() => route.fullPath, () => {
   displayMobileNavigation.value = false
   Object.keys(displaySubnavigation.value).forEach(key => {
-    console.log(key)
     displaySubnavigation.value[key] = false
   });
 })
@@ -192,7 +190,7 @@ watch(() => route.fullPath, () => {
 .header.header--transparent {
   border-bottom-color: var(--half-spanish-white);
   background-color: transparent;
-  nav .text{
+  .header__navigation > ul > li > .text{
     color: var(--half-spanish-white)
   }
   .header__subnavigation-item{
@@ -224,7 +222,9 @@ watch(() => route.fullPath, () => {
 @media (max-width: 1000px) {
   .header {
     position: relative;
-
+    &.header--transparent nav.header__navigation > ul > li > .text{
+      color: var(--dark-jungle-green)
+    }
     &__list {
       .text {
         font-size: 1.5rem;
@@ -271,7 +271,7 @@ watch(() => route.fullPath, () => {
       padding: 0;
       gap: 1rem;
       opacity: 1;
-
+      
       &--hidden {
         display: flex;
         transform: none;
