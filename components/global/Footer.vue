@@ -74,9 +74,19 @@ const navLinks = [
 ]
 </script>
 <template>
-  <footer>
-    <div>
+  <footer class="footer">
+    <div class="footer__navs">
       <footer-nav v-for="(nav,index) in navLinks" :key="index" :title="nav.title" :childs="nav.childs"/>
     </div>
   </footer>
 </template>
+
+<style lang="scss">
+
+.footer__navs{
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  row-gap: 20px;
+  column-gap: 98px;
+}
+</style>
