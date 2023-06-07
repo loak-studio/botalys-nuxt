@@ -48,7 +48,7 @@ onMounted(() => {
   }, .2)
   autoTimeline.from('.hero__header', {
     opacity: 0,
-    yPercent: -100,
+    marginTop: -100,
   }, .2)
   scrollTimeline.to('.hero__line-1', {
     yPercent: -100,
@@ -86,7 +86,7 @@ onMounted(() => {
   }, .2)
   scrollTimeline.to('.hero__header', {
     opacity: 0,
-    yPercent: -100,
+    marginTop: -100,
   }, .2)
 })
 </script>
