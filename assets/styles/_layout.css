@@ -18,7 +18,7 @@ html{
   flex: 1 1 0;
 }
 @media (max-width: 1000px) {
-  body.no-scroll{
+  .no-scroll{
     overflow: hidden;
   }
 }

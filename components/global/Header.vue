@@ -40,7 +40,7 @@ navItems.forEach((item) => {
 })
 
 const toggleMenu = () => {
-  (document.querySelector('body') as HTMLBodyElement).classList.toggle('no-scroll')
+  (document.querySelector('html') as HTMLElement).classList.toggle('no-scroll')
   displayMobileNavigation.value = !displayMobileNavigation.value
   window.scrollTo(0, 0)
 }
