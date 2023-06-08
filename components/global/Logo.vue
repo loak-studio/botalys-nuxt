@@ -1,5 +1,5 @@
 <template>
-  <svg class="logo" width="794" height="101" viewBox="0 0 794 101" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <svg name="BOTALYS logo" title="BOTALYS" class="logo" width="794" height="101" viewBox="0 0 794 101" fill="none" xmlns="http://www.w3.org/2000/svg">
     <path
       d="M378.918 68.9651C387.246 49.8669 402.052 46.5938 408.413 47.3445C407.257 51.8488 403.469 64.731 397.57 80.2257C391.671 95.7205 375.159 99.5942 367.641 99.5942C367.93 97.342 370.59 88.0632 378.918 68.9651Z"
       :fill="color" />

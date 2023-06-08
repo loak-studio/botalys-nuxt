@@ -123,7 +123,6 @@ const navLinks = [
   grid-template-columns: repeat(2, minmax(0, 1fr));
   row-gap: 20px;
   column-gap: 98px;
-
   padding: 40px;
   padding-right: 113px;
 }
@@ -133,7 +132,7 @@ const navLinks = [
 }
 .footer__line-1 {
   position: absolute;
-  left: 0;
+  left: 0px;
   width: 2px;
   height: 100%;
   background: var(--half-spanish-white);
@@ -143,12 +142,23 @@ const navLinks = [
 
 .footer__line-2 {
   position: absolute;
-  right: 0;
+  right: 0px;
   width: 2px;
   height: 100%;
   background: var(--half-spanish-white);
   top: 0;
   margin: 0;
+}
+@media (max-width: 1328px) {
+  .footer__line-1{
+    left:4px;
+  }
+  .footer__line-2{
+    right:4px;
+  }
+  .footer__container{
+    padding: 0 4px;
+  }
 }
 @media (max-width: 1000px) {
   .footer__container{

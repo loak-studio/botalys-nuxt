@@ -5,7 +5,7 @@
   </div>
 </template>
 
-<style lang="scss">
+<style>
   .footer-signature{
     display: flex;
     align-items: center;
@@ -15,14 +15,14 @@
     gap:1ch;
   }
   .footer-signature__link{
-    color: var(--half-spanish-white)
+    color: var(--half-spanish-white);
   }
-  @media (max-width:700px) {
-      .footer-signature{
-        padding: 40px 1rem;
-        justify-content: flex-start;
-        flex-direction: column;
-        align-items: flex-start;
-      }
+  @media (max-width: 1000px) {
+    .footer-signature{
+      padding: 40px 1rem;
+      justify-content: flex-start;
+      align-items: flex-start;
+      flex-direction: column;
+    }
   }
 </style>
