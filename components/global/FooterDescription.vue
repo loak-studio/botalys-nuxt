@@ -20,4 +20,12 @@
   color: var(--half-spanish-white);
   margin-top: 40px;
 }
+@media (max-width: 700px) {
+  .footer-description{
+    width: 100%;
+    border-left: none;
+    border-bottom: 2px solid var(--half-spanish-white);
+    padding: 40px 1rem;
+  }
+}
 </style>

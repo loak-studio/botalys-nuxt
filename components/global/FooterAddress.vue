@@ -28,10 +28,16 @@
 .address__vat{
   margin-top: 18px;
   padding-top: 18px;
+  max-width: 240px;
   border-top: 2px solid var(--half-spanish-white);
 }
 .address__link{
   color: var(--half-spanish-white);
   display: block;
+}
+@media (max-width:700px) {
+  .address{
+    padding:40px 1rem;
+  }
 }
 </style>

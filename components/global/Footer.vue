@@ -88,7 +88,10 @@ const navLinks = [
         </div>
       </div>
       <div class="footer__column-2">
-
+        <footer-supported/>
+        <footer-disclaimer/>
+        <footer-image/>
+        <footer-signature/>
       </div>
     </div>
   </footer>
@@ -111,6 +114,8 @@ const navLinks = [
 }
 .footer__column-2{
   width: 44%;
+  display: flex;
+  flex-direction: column;
 }
 
 .footer__navs {
@@ -119,7 +124,8 @@ const navLinks = [
   row-gap: 20px;
   column-gap: 98px;
 
-  padding: 72px  68px;
+  padding: 40px;
+  padding-right: 113px;
 }
 .footer__description-and-address{
   border-top:2px solid var(--half-spanish-white);
@@ -143,4 +149,25 @@ const navLinks = [
   background: var(--half-spanish-white);
   top: 0;
   margin: 0;
-}</style>
+}
+@media (max-width: 1000px) {
+  .footer__container{
+    flex-direction: column;
+  }
+  .footer__column-1{
+    width: 100%;
+  }
+  .footer__column-2{
+    width: 100%;
+  }
+}
+@media (max-width: 700px) {
+  .footer__description-and-address{
+    flex-direction: column;
+  }
+  .footer__navs{
+    grid-template-columns: repeat(1, minmax(0,1fr));
+    padding:40px 1rem;
+  }
+}
+</style>

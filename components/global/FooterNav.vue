@@ -35,4 +35,9 @@ const {title, childs}= defineProps({title:String, childs: Array})
   gap:20px;
   margin-top: 20px;
 }
+@media (max-width: 1000px) {
+    .footer-nav__title::after{
+      display: none;
+    }
+}
 </style>
