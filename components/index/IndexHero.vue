@@ -136,7 +136,6 @@ onMounted(() => {
   min-height: 800px;
   display: flex;
   flex-direction: column;
-  background-color: black;
 }
 
 .hero__header {
@@ -158,13 +157,13 @@ onMounted(() => {
   right: 0;
   bottom: 0;
   top: 0;
-  z-index: 0;
+  z-index: -1;
+  filter: brightness(.5);
 
   & video {
     height: 100%;
     width: 100%;
     object-fit: cover;
-    opacity: .4;
   }
 }
 
