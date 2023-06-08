@@ -1,6 +1,6 @@
 <template>
-  <IndexHero/>
-  <p style="height: 200vh">index</p>
+  <index-hero/>
+  <index-discover/>
   <Footer/>
 </template>
 

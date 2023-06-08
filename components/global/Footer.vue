@@ -150,14 +150,9 @@ const navLinks = [
   margin: 0;
 }
 @media (max-width: 1328px) {
-  .footer__line-1{
-    left:4px;
-  }
-  .footer__line-2{
-    right:4px;
-  }
   .footer__container{
-    padding: 0 4px;
+
+    width: calc(100% - 8px);
   }
 }
 @media (max-width: 1000px) {

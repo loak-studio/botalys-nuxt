@@ -8,6 +8,7 @@ button{
 }
 html{
   overflow-x: hidden;
+  background-color: var(--half-spanish-white);
 }
 #__nuxt{
   display: flex;

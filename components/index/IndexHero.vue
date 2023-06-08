@@ -279,17 +279,8 @@ onMounted(() => {
 }
 
 @media (max-width: 1328px) {
-  .hero__line-3 {
-    left: 4px;
-  }
-
-  .hero__line-2 {
-    right: 4px;
-  }
-
   .hero__container {
-    padding-left: 4px;
-    padding-right: 4px;
+    width: calc(100% - 8px);
   }
 
   .hero__logo {
