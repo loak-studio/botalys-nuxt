@@ -1,11 +1,32 @@
 <template>
   <index-hero/>
   <index-discover/>
+  <index-harness/>
+  <scroll-tabs :items="[
+    {
+      title:'Venture off-trail',
+      text:'Biomimetic Farming Technology is a unique opportunity for you to explore uncharted botanical territories.',
+      image:testasset
+    },
+
+    {
+      title:'Upgrade your standards',
+      text:'BOTALYS is committed to providing meticulous brands like yours the uncompromising quality botanicals they deserve.',
+      image:testtwo
+    },
+    {
+      title:'Protect wild biotopes',
+      text:'BOTALYS grows the most pristine botanicals in the world without plundering wild biotopes, ushering in a new era of truly sustainable phytoactive ingredients.',
+      image:testtwo
+    },
+  ]"/>
   <Footer/>
 </template>
 
 <script setup lang="ts">
 import "../assets/styles/index.css"
+import testasset from "~/assets/images/bulb.png"
+import testtwo from "~/assets/images/butterfly.png"
 definePageMeta({layout:false})
 const title = "Botalys - Seek wild precision"
 const description = "BOTALYS uses an innovative Biomimetic Indoor Farming technology to recreate the ideal wild conditions for rare botanicals to grow in. We develop pristine &#38; potent botanical ingredients for the Nutraceutical and Cosmetic industries."
