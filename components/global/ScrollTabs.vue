@@ -13,6 +13,10 @@ onMounted(() => {
         start: "top 20%",
         end: "+=" + items.length * 400,
         pin: ".scroll-tabs__trigger",
+        snap:{
+          snapTo:1/(items.length*2-4),
+          duration:.2
+        }
       }
     })
     items.forEach((item, index) => {
