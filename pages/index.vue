@@ -6,18 +6,30 @@
     {
       title:'Venture off-trail',
       text:'Biomimetic Farming Technology is a unique opportunity for you to explore uncharted botanical territories.',
-      image:testasset
+      image:testasset,
+      button:{
+        label:'button',
+        href:'#'
+      }
     },
 
     {
       title:'Upgrade your standards',
       text:'BOTALYS is committed to providing meticulous brands like yours the uncompromising quality botanicals they deserve.',
-      image:testtwo
+      image:testtwo,
+      button:{
+        label:'button',
+        href:'#'
+      }
     },
     {
       title:'Protect wild biotopes',
       text:'BOTALYS grows the most pristine botanicals in the world without plundering wild biotopes, ushering in a new era of truly sustainable phytoactive ingredients.',
-      image:testtwo
+      image:testtwo,
+      button:{
+        label:'button',
+        href:'#'
+      }
     },
   ]"/>
   <Footer/>

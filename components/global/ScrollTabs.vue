@@ -14,11 +14,12 @@ onMounted(() => {
         end: "+=" + items.length * 400,
         pin: ".scroll-tabs__trigger",
         snap:{
-          snapTo:1/(items.length*2-4),
-          duration:.2
+          snapTo:1/(items.length-1),
+          duration:.5
         }
       }
     })
+    
     items.forEach((item, index) => {
       if (index > 0) {
         tl.addLabel('panel-' + index)
@@ -56,7 +57,8 @@ onMounted(() => {
 
           <div :class="'scroll-tabs__panel ' + (index == 0 ? 'scroll-tabs__panel--active' : '')"
             v-for="(item, index ) in items" :key="index">
-            <p>{{ item.text }}</p>
+            <p class="h3">{{ item.text }}</p>
+            <Button :href="item.button.href" color="green">{{ item.button.label }}</Button>
             <figure class="scroll-tabs__image">
               <img :src="item.image" alt="" />
             </figure>
