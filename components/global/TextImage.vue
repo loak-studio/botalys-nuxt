@@ -9,7 +9,7 @@ onMounted(() => {
         scrollTrigger: {
             trigger: '.text-image__figure',
             start: 'top 80%',
-            markers: true
+            markers: false
         }
     })
     tl.from('.text-image__figure', {
