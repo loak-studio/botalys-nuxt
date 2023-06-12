@@ -11,7 +11,7 @@ onMounted(() => {
         scrub: true,
         trigger: ".scroll-tabs__trigger",
         markers: false,
-        start: "top 10%",
+        start: "50% 50%",
         end: "+=" + items.length * 300,
         pin: ".scroll-tabs__trigger",
         snap:{
@@ -94,12 +94,13 @@ onUnmounted(()=>{
 }
 
 .scroll-tabs__image {
-  height: 80%;
-  width: 200px;
+  height: 787px;
+  width: 498px;
   position: absolute;
-  right: 2px;
-  top: 0;
-
+  right: -66px;
+  top: -52px;
+  border-radius: 322.5px 0px 0px 0px;
+  overflow: hidden;
   img {
     height: 100%;
     width: 100%;
@@ -123,7 +124,7 @@ onUnmounted(()=>{
 }
 
 .scroll-tabs__panel-content{
-  max-width: 856px;
+  max-width: 890px;
   width: 100%;
   margin: 0 auto;
   padding: 0 1rem;
@@ -197,6 +198,13 @@ onUnmounted(()=>{
   right: 0;
   bottom: 0;
   background: var(--nandor);
+}
+
+@media (max-width:1200px) {
+  .scroll-tabs__image{
+    width: 300px;
+  border-radius: 222.5px 0px 0px 0px;
+  }
 }
 
 @media (max-width: 1000px) {
