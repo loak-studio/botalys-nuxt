@@ -220,6 +220,9 @@ watch(() => route.fullPath, () => {
 }
 
 @media (max-width: 1000px) {
+  .header:not(.header--display-nav) .header__navigation *{
+    pointer-events: none;
+  }
   .header {
     position: relative;
     &.header--transparent nav.header__navigation > ul > li > .text{
