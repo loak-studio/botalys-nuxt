@@ -52,7 +52,7 @@ onUnmounted(()=>{
     max-width: 1296px;
     margin: 0 auto;
     position: relative;
-    padding: 148px 0 120px 0
+    padding: 148px 0 120px 0;
 }
 
 .text-image__figure {
@@ -76,9 +76,10 @@ onUnmounted(()=>{
 .text-image__content {
     background: var(--dark-jungle-green);
     color: var(--half-spanish-white);
-    padding-top: 113px;
     display: flex;
     justify-content: flex-end;
+    height: 603px;
+    align-items: flex-end;
 }
 
 .text-image__slot {
@@ -130,6 +131,7 @@ onUnmounted(()=>{
 
     .text-image__content {
         padding-top: 234px;
+        height: auto;
     }
 
     .text-image__slot {
