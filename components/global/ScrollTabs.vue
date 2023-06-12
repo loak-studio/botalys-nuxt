@@ -2,10 +2,11 @@
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 const { items } = defineProps({ items: Array })
+let tl
 onMounted(() => {
   gsap.registerPlugin(ScrollTrigger)
   gsap.matchMedia().add("(min-width:1000px)", () => {
-    const tl = gsap.timeline({
+    tl = gsap.timeline({
       scrollTrigger: {
         scrub: true,
         trigger: ".scroll-tabs__trigger",
@@ -34,6 +35,9 @@ onMounted(() => {
       }
     })
   })
+})
+onUnmounted(()=>{
+  tl.kill()
 })
 
 </script>
