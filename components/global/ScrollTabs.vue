@@ -11,8 +11,8 @@ onMounted(() => {
         scrub: true,
         trigger: ".scroll-tabs__trigger",
         markers: true,
-        start: "top 20%",
-        end: "+=" + items.length * 400,
+        start: "top 10%",
+        end: "+=" + items.length * 300,
         pin: ".scroll-tabs__trigger",
         snap:{
           snapTo:1/(items.length-1),
@@ -61,8 +61,10 @@ onUnmounted(()=>{
 
           <div :class="'scroll-tabs__panel ' + (index == 0 ? 'scroll-tabs__panel--active' : '')"
             v-for="(item, index ) in items" :key="index">
-            <p class="h3">{{ item.text }}</p>
+            <div class="scroll-tabs__panel-content">
+              <p :data-text="item.title" class="h3 scroll-tabs__panel-title">{{ item.text }}</p>
             <Button :href="item.button.href" color="green">{{ item.button.label }}</Button>
+            </div>
             <figure class="scroll-tabs__image">
               <img :src="item.image" alt="" />
             </figure>
@@ -87,7 +89,7 @@ onUnmounted(()=>{
 
 .scroll-tabs__trigger {
   position: relative;
-  height: 600px;
+  height: 682px;
   display: flex;
 }
 
@@ -120,6 +122,21 @@ onUnmounted(()=>{
   position: relative;
 }
 
+.scroll-tabs__panel-content{
+  max-width: 856px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 1rem;
+  margin-top: 166px;
+  height: 350px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.scroll-tabs__panel-title{
+  width: 466px;
+}
 
 .scroll-tabs__panel {
   position: absolute;
@@ -180,4 +197,42 @@ onUnmounted(()=>{
   right: 0;
   bottom: 0;
   background: var(--nandor);
-}</style>
+}
+
+@media (max-width: 1000px) {
+    .scroll-tabs__image{
+      display: none;
+    }
+    .scroll-tabs__aside{
+      display: none;
+    }
+    .scroll-tabs__panel{
+      position: static;
+      opacity: 1;
+      height: auto;
+    }
+    .scroll-tabs__panel-content{
+      margin-top: 0;
+      justify-content: flex-start;
+      height: auto;
+      padding:40px 1rem;
+      border-bottom: 2px solid var(--nandor);
+    }
+    .scroll-tabs__trigger{
+      height: auto;
+    }
+    .scroll-tabs__panel-title{
+      margin-bottom: 3rem;
+      width: auto;
+    }
+    .scroll-tabs__panel-title::before{
+      content:attr(data-text);
+      display: block;
+      padding: 48px;
+      font-size: 20px;
+      color: var(--half-spanish-white);
+      background: var(--nandor);
+      margin-bottom: 24px;
+    }
+}
+</style>
