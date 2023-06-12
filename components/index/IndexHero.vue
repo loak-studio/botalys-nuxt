@@ -2,7 +2,6 @@
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 onMounted(() => {
-  window.scrollTo(0,0)
   document.querySelector('html').style.overflow = "hidden"
   setTimeout(()=>{
   document.querySelector('html').style.removeProperty('overflow')

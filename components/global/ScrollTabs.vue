@@ -10,7 +10,7 @@ onMounted(() => {
       scrollTrigger: {
         scrub: true,
         trigger: ".scroll-tabs__trigger",
-        markers: true,
+        markers: false,
         start: "top 10%",
         end: "+=" + items.length * 300,
         pin: ".scroll-tabs__trigger",
