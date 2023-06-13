@@ -19,7 +19,7 @@ const {items}= defineProps({items:Array})
                             <p class="text" v-for="(paragraph,index) in item.description" :key="index">{{ paragraph }}</p>
                         </div>
                     </div>
-                    <tabs :items="item.tabs"/>
+                    <tabs class="tabs-container__tabs" :items="item.tabs"/>
                 </div>
             </div>
         </section>
@@ -86,5 +86,36 @@ const {items}= defineProps({items:Array})
     }
     .tabs-container__paragraphs > .text+.text{
         margin-top: 1rem;
+    }
+    .tabs-container__tabs{
+        max-width: 593px;
+        width: 100%;
+    }
+    @media (max-width: 1150px) {
+        .tabs-container__content{
+            flex-direction: column;
+        }
+        .tabs-container__text{
+            max-width: none;
+        }
+        .tabs-container__item:nth-child(odd) .tabs-container__figure,.tabs-container__item:nth-child(even) .tabs-container__figure{
+            max-width: 100%;
+            border-radius: 0 0 0 0;
+            margin-left: 0;
+        }
+    }
+    @media (max-width:809px) {
+        .tabs-container__content{
+            padding: 40px 0;
+        }
+        .tabs-container__text{
+            padding: 0 1rem;
+        }
+        .tabs-container__figure{
+            height: 100px;
+        }
+        .tabs-container__tabs{
+            max-width: none;
+        }
     }
 </style>

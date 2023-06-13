@@ -11,8 +11,7 @@ onMounted(() => {
     tl = gsap.timeline({
         scrollTrigger: {
             trigger: figure.value,
-            start: 'top 80%',
-            markers: true
+            start: 'top 80%'
         }
     })
     tl.from(figure.value, {
@@ -30,7 +29,7 @@ onUnmounted(()=>{
 </script>
 
 <template>
-    <div ref="skrt" :id="id" class="text-image__parent">
+    <div class="text-image__parent">
         <section class="text-image">
             <hr class="text-image__line-1">
             <hr class="text-image__line-2">
