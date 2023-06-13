@@ -43,10 +43,10 @@ onMounted(() => {
         })
         steps.forEach((step, index) => {
             tl.from(`.development-steps__item:nth-child(${index + 2}) .development-steps__line-2`, {
-                scale: 0,
+                scaleX: 0,
             })
             tl.from(`.development-steps__item:nth-child(${index + 2}) .development-steps__line-1`, {
-                scale: 0,
+                scaleY: 0,
             })
             tl.from(`.development-steps__item:nth-child(${index + 2})`, {
                 borderColor: 'transparent',

@@ -1,6 +1,5 @@
 <script setup>
 const { links } = defineProps({ links: Array })
-console.log(links)
 </script>
 <template>
     <nav class="breadcrumb">
