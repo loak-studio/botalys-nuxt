@@ -7,7 +7,6 @@ let tl
 const figure = ref()
 const parent = ref()
 onMounted(() => {
-    console.log(parent.value)
     gsap.registerPlugin(ScrollTrigger)
     tl = gsap.timeline({
         scrollTrigger: {

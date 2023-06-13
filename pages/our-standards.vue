@@ -13,7 +13,7 @@ import River from "~/assets/images/river.jpg"
     <hero-with-photo :image="Moutain" title="Our standards"
         :paragraphs="[
             `BOTALYS ambitions to set higher standards in botanicals sourcing for brands that will not settle for anything less than excellence.`]" />
-    <text-image id="text-image-1" :image-src="LeafDrop">
+    <text-image :image-src="LeafDrop">
         <div>
             <Tag color="yellow">Get in touch</Tag>
             <h3 class="h3">Let's go further together</h3>

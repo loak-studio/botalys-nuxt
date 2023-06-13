@@ -1,6 +1,5 @@
 <script setup>
 const {items}= defineProps({items:Array})
-console.log(items)
 </script>
 
 <template>
