@@ -50,7 +50,7 @@ onMounted(() => {
             })
             tl.from(`.development-steps__item:nth-child(${index + 2})`, {
                 borderColor: 'transparent',
-                background:'transparent'
+                background:'rgb(230,226,201)'
             })
             tl.from(`.development-steps__item:nth-child(${index + 2}) > *:not(.development-steps__line-1):not(.development-steps__line-2)`, {
                 opacity: 0,
