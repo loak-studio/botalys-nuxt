@@ -101,7 +101,10 @@ onMounted(() => {
   }, .2)
 })
 onUnmounted(()=>{
-  autoTimeline.kill()
+  if(autoTimeline && scrollTimeline){
+    autoTimeline.kill()
+  scrollTimeline.kill()
+  }
 })
 </script>
 <template>
