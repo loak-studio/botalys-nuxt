@@ -19,7 +19,7 @@ const {items}= defineProps({items:Array})
                             <p class="text" v-for="(paragraph,index) in item.description" :key="index">{{ paragraph }}</p>
                         </div>
                     </div>
-                    <tabs class="tabs-container__tabs" :items="item.tabs"/>
+                    <tabs :reverse-radius="index % 2 ==0" class="tabs-container__tabs" :items="item.tabs"/>
                 </div>
             </div>
         </section>
@@ -67,12 +67,12 @@ const {items}= defineProps({items:Array})
         width: 1440px;
         margin-left: -72px;
     }
-    .tabs-container__item:nth-child(odd) .tabs-container__figure{
+    .tabs-container__item:nth-child(even) .tabs-container__figure{
         
             border-radius: 0px 0px 0px 96px;
             overflow: hidden;
     }
-    .tabs-container__item:nth-child(even) .tabs-container__figure{
+    .tabs-container__item:nth-child(odd) .tabs-container__figure{
             border-radius: 0px 0px 96px 0px ;
             overflow: hidden;
     }
