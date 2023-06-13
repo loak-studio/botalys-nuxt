@@ -41,6 +41,7 @@ const currentTab = ref(0)
     display: block;
     position: relative;
     text-align: center;
+    cursor: pointer;
     &--active{
         background: var(--nandor);
         color: var(--half-spanish-white);
