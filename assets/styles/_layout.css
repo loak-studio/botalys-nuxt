@@ -6,9 +6,10 @@ button{
   background: none;
   border:none;
 }
-html{
-  overflow-x: hidden;
+body{
   background-color: var(--half-spanish-white);
+  width: 100vw;
+  overflow-x: hidden;
 }
 #__nuxt{
   display: flex;
