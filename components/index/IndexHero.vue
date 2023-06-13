@@ -1,21 +1,24 @@
 <script setup>
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import { hasAnimationBeenPlayed } from '~/stores/animation-store';
 onMounted(() => {
-  document.querySelector('html').style.overflow = "hidden"
-  setTimeout(()=>{
-  document.querySelector('html').style.removeProperty('overflow')
-  }, 800)
   gsap.registerPlugin(ScrollTrigger)
   const scrollTimeline = gsap.timeline({
     scrollTrigger: {
-      trigger:'.hero',
+      trigger: '.hero',
       scrub: true,
       start: "60% 50%",
-      end:"bottom top",
+      end: "bottom top",
     }
   })
-  const autoTimeline = gsap.timeline()
+  if(!hasAnimationBeenPlayed()){
+
+  document.querySelector('html').style.overflow = "hidden"
+  setTimeout(() => {
+    document.querySelector('html').style.removeProperty('overflow')
+  }, 800)
+    const autoTimeline = gsap.timeline()
   autoTimeline.from('.hero__line-1', {
     yPercent: -100,
     opacity: 0
@@ -54,6 +57,7 @@ onMounted(() => {
     opacity: 0,
     marginTop: -100,
   }, .2)
+  }
   scrollTimeline.to('.hero__line-1', {
     yPercent: -100,
     opacity: 0
