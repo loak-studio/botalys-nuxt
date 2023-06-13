@@ -49,7 +49,7 @@ onMounted(() => {
                 scale: 0,
             })
             tl.from(`.development-steps__item:nth-child(${index + 2})`, {
-                borderWidth: 0,
+                borderColor: 'transparent',
                 background:'transparent'
             })
             tl.from(`.development-steps__item:nth-child(${index + 2}) > *:not(.development-steps__line-1):not(.development-steps__line-2)`, {
