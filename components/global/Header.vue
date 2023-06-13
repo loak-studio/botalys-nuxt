@@ -46,9 +46,11 @@ const toggleMenu = () => {
 }
 const route = useRoute()
 watch(() => route.fullPath, () => {
+
+  (document.querySelector('html') as HTMLElement).classList.remove('no-scroll')
   displayMobileNavigation.value = false
   Object.keys(displaySubnavigation.value).forEach(key => {
-    displaySubnavigation.value[key] = false
+    displaySubnavigation.value[key] = false;
   });
 })
 </script>
