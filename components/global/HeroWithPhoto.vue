@@ -94,6 +94,7 @@ const { title, paragraphs, image } = defineProps({ title: String, paragraphs: Ar
     position: absolute;
     right: -64px;
     bottom: -64px;
+    filter:brightness(.7);
 
     img {
         height: 100%;
