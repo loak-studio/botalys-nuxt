@@ -50,6 +50,7 @@ const { title, paragraphs, image } = defineProps({ title: String, paragraphs: Ar
 .hero-photo__bottom {
     min-height: 468px;
     position: relative;
+    border-bottom: 2px solid var(--nandor);
 }
 
 .hero-photo__text-container {
@@ -66,9 +67,11 @@ const { title, paragraphs, image } = defineProps({ title: String, paragraphs: Ar
 
     max-width: 616px;
 }
-.hero-photo__text-container{
+
+.hero-photo__text-container {
     padding-top: 2rem;
 }
+
 .hero-photo__title-container {
     max-width: 1024px;
     width: 100%;
@@ -100,36 +103,46 @@ const { title, paragraphs, image } = defineProps({ title: String, paragraphs: Ar
 }
 
 @media (max-width:1220px) {
-    .hero-photo__figure{
+    .hero-photo__figure {
         width: 300px;
-    border-radius: 175px 0px 0px 0px;
+        border-radius: 175px 0px 0px 0px;
     }
 }
 
 @media (max-width:1060px) {
-    .hero-photo__top, .hero-photo__bottom{
+
+    .hero-photo__top,
+    .hero-photo__bottom {
         padding: 0 0 0 1rem;
     }
 }
+
 @media (max-width:895px) {
-    .hero-photo__text-container{
+    .hero-photo__text-container {
         padding: 1rem;
     }
-    .hero-photo__title-container{
+
+    .hero-photo__title-container {
         padding: 1rem;
     }
-    .hero-photo__bottom{
+
+    .hero-photo__bottom {
         min-height: 0;
         padding: 0;
     }
-    .hero-photo__top{
+
+    .hero-photo__top {
         min-height: 0;
         padding: 0;
     }
-    .hero-photo__figure{
+
+    .hero-photo__figure {
         position: static;
-        height: 300px;
+        max-height: 251px;
+        max-width: 353px;
+        width: 100%;
+        height: 100%;
         margin-left: auto;
+        border-radius: 100px 0px 0px 0px;
     }
-}
-</style>
+}</style>

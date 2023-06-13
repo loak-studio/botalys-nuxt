@@ -34,14 +34,11 @@
   ]" />
   <text-image :imageSrc="River">
     <div>
-      <Tag color="yellow">Get in touch</Tag>
-      <h3 class="h3">Let's go further together</h3>
+      <Tag color="yellow">Biomimetic Indoor Farming</Tag>
+      <h3 class="h3">We raise the bar for botanicals sourcing</h3>
     </div>
-    <p class="text">Do you have a project in mind for which you wish to unlock the full potential of rare medicinal plants
-      ? Are you interested in exploring the innovation opportunities offered by Biomimetic Indoor Farming? Or maybe you
-      want to learn more about how phytonutrients and emerging trends can synergize into unique new Nutraceutical
-      formulas? Whatever your needs are, we would love to hear from you and help you achieve your vision. Take the first
-      step and reach out to us.</p>
+    <p class="text">Thanks to its innovative proprietary technology, BOTALYS is able to produce the most pristine quality botanicals in the world.</p>
+    <p class="text">From absolute purity to complete standardization, BOTALYS has taken up the bold challenge of ticking all the boxes of an ideal botanicals supply. So that our clients no longer have to choose between quality, effectiveness and sustainability.</p>
     <Button href="#" color="outline">Contact us</Button>
   </text-image>
   <Footer />
@@ -52,7 +49,6 @@ import "../assets/styles/index.css"
 import testasset from "~/assets/images/footer-jungle.png"
 import testtwo from "~/assets/images/butterfly.png"
 import River from "~/assets/images/river.jpg"
-import { test } from "node:test";
 definePageMeta({ layout: false })
 const title = "Botalys - Seek wild precision"
 const description = "BOTALYS uses an innovative Biomimetic Indoor Farming technology to recreate the ideal wild conditions for rare botanicals to grow in. We develop pristine &#38; potent botanical ingredients for the Nutraceutical and Cosmetic industries."

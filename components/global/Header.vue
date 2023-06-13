@@ -220,7 +220,7 @@ watch(() => route.fullPath, () => {
 }
 
 @media (max-width: 1000px) {
-  .header:not(.header--display-nav) .header__navigation *{
+  .header:not(.header--display-nav) .header__navigation, .header:not(.header--display-nav) .header__contact{
     pointer-events: none;
   }
   .header {
