@@ -3,7 +3,6 @@
 </template>
 <script setup>
 const title = "Our Approach - Botalys"
-const description ="Des"
 useSeoMeta({
   title: title,
   ogTitle: title,

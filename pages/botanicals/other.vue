@@ -1,6 +1,16 @@
 <script setup>
 import Plant from "~/assets/images/illustrations/plant.png"
 import River from "~/assets/images/river.jpg"
+
+const title = "Other botanicals - Botalys"
+useSeoMeta({
+  title: title,
+  ogTitle: title,
+  twitterTitle: title,
+  ogImage: 'https://botalys.com/share.png',
+  twitterImage: 'https://botalys.com/share.png',
+  twitterCard: 'summary_large_image',
+})
 </script>
 <template>
     <hero-with-illustration :links="[{

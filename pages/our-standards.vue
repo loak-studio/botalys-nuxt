@@ -5,8 +5,17 @@ import Slice1 from "~/assets/images/standards/slice-1.png"
 import Slice2 from "~/assets/images/standards/slice-2.png"
 import Slice3 from "~/assets/images/standards/slice-3.png"
 import Slice4 from "~/assets/images/standards/slice-4.png"
-
 import River from "~/assets/images/river.jpg"
+
+const title = "Our standards - Botalys"
+useSeoMeta({
+  title: title,
+  ogTitle: title,
+  twitterTitle: title,
+  ogImage: 'https://botalys.com/share.png',
+  twitterImage: 'https://botalys.com/share.png',
+  twitterCard: 'summary_large_image',
+})
 </script>
 
 <template>
