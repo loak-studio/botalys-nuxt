@@ -1,22 +1,26 @@
 <script setup>
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
-const { imageSrc } = defineProps({ imageSrc: String })
+const { imageSrc, id } = defineProps({ imageSrc: String})
 let tl
+
+const figure = ref()
+const parent = ref()
 onMounted(() => {
+    console.log(parent.value)
     gsap.registerPlugin(ScrollTrigger)
     tl = gsap.timeline({
         scrollTrigger: {
-            trigger: '.text-image__figure',
+            trigger: figure.value,
             start: 'top 80%',
-            markers: false
+            markers: true
         }
     })
-    tl.from('.text-image__figure', {
+    tl.from(figure.value, {
         x: -150,
         opacity: 0,
     })
-    tl.from('.text-image__slot',{
+    tl.from(parent.value,{
         x:-50,
         opacity:0
     })
@@ -27,16 +31,16 @@ onUnmounted(()=>{
 </script>
 
 <template>
-    <div class="text-image__parent">
+    <div ref="skrt" :id="id" class="text-image__parent">
         <section class="text-image">
             <hr class="text-image__line-1">
             <hr class="text-image__line-2">
-            <figure class="text-image__figure">
+            <figure ref="figure" class="text-image__figure">
                 <img :src="imageSrc" alt="">
             </figure>
             <div class="text-image__content">
-                <div class="text-image__slot">
-                    <slot />
+                <div ref="parent" class="text-image__slot">
+                    <slot  />
                 </div>
             </div>
         </section>
@@ -89,6 +93,9 @@ onUnmounted(()=>{
     flex-direction: column;
     gap: 2rem;
     align-items: flex-start;
+    .text + .text{
+        margin-top: 1rem;
+    }
 }
 
 .text-image__line-1 {
