@@ -1,5 +1,5 @@
 <script setup>
-import { gsap } from 'gsap';
+import { gsap, Power1 } from 'gsap';
 import { ScrollTrigger } from 'gsap/all';
 let tl
 
@@ -42,11 +42,14 @@ onMounted(() => {
             }
         })
         steps.forEach((step, index) => {
+           if(index < steps.length -1){
             tl.from(`.development-steps__item:nth-child(${index + 2}) .development-steps__line-2`, {
                 scaleX: 0,
+                ease:Power1.easeIn
             })
             tl.from(`.development-steps__item:nth-child(${index + 2}) .development-steps__line-1`, {
                 scaleY: 0,
+                ease:Power1.easeOut
             })
             tl.from(`.development-steps__item:nth-child(${index + 2})`, {
                 borderColor: 'transparent',
@@ -55,6 +58,7 @@ onMounted(() => {
             tl.from(`.development-steps__item:nth-child(${index + 2}) > *:not(.development-steps__line-1):not(.development-steps__line-2)`, {
                 opacity: 0,
             })
+           }
         })
     })
 })
