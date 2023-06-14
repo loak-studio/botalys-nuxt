@@ -7,7 +7,8 @@
 <script setup lang="ts">
 const NuxtLink = resolveComponent('NuxtLink')
 const { href, color } = defineProps({
-  href: { type: String }, color: {
+  href: { type: String, required:false }, color: {
+    default:'green',
     type: String, validator: (value) => {
       return value == "green" || value == "yellow" || value == "outline" || value == "header"
     }

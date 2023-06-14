@@ -180,7 +180,7 @@ onUnmounted(()=>{
 }
 
 .hero__tagline {
-  font-family: "Sofia Pro";
+  font-family: "sofia-pro";
   font-size: 40px;
   font-weight: 700;
   text-transform: uppercase;

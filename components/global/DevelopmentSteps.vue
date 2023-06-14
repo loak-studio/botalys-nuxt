@@ -178,7 +178,7 @@ onUnmounted(() => {
 }
 
 .development-steps__number {
-    font-family: 'Sofia Pro';
+    font-family: 'sofia-pro';
     font-size: 96px;
     font-weight: 700;
     line-height: 142%;

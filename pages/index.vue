@@ -39,7 +39,7 @@
     </div>
     <p class="text">Thanks to its innovative proprietary technology, BOTALYS is able to produce the most pristine quality botanicals in the world.</p>
     <p class="text">From absolute purity to complete standardization, BOTALYS has taken up the bold challenge of ticking all the boxes of an ideal botanicals supply. So that our clients no longer have to choose between quality, effectiveness and sustainability.</p>
-    <Button href="#" color="outline">Contact us</Button>
+    <botalys-button href="#" color="outline">Contact us</botalys-button>
   </text-image>
   <Footer />
 </template>
@@ -69,7 +69,10 @@ useHead({
     { rel: "apple-touch-icon", sizes: '180x180', href: '/apple-touch-icon.png' },
     { rel: "icon", type: "image/png", sizes: '32x32', href: '/favicon-32x32.png' },
     { rel: 'icon', type: 'image/png', sizes: '32x32', href: '/favicon-32x32.png' },
-    { rel: 'manifest', href: '/site.webmanifest' }
+    { rel: 'manifest', href: '/site.webmanifest' },
+    {
+      rel:'stylesheet', href:'https://use.typekit.net/jac8fmm.css'
+    }
   ],
   meta: [
     { name: 'msapplication-TileColor', content: '#E6E2C9' },

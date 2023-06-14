@@ -22,22 +22,20 @@ useSeoMeta({
     <hero-with-photo :image="Moutain" title="Our standards"
         :paragraphs="[
             `BOTALYS ambitions to set higher standards in botanicals sourcing for brands that will not settle for anything less than excellence.`]" />
-    <text-image :image-src="LeafDrop">
+   
+
+    <text-image :imageSrc="River">
         <div>
-            <Tag color="yellow">Get in touch</Tag>
-            <h3 class="h3">Let's go further together</h3>
+            <Tag color="yellow">Biomimetic Indoor Farming</Tag>
+            <h3 class="h3">We raise the bar for botanicals sourcing</h3>
         </div>
-        <div>
-            <p class="text light">Thanks to its innovative proprietary technology, BOTALYS is able to produce the most pristine
-                quality botanicals in the world.</p>
-            <p class="text light">
-                From absolute purity to complete standardization, BOTALYS has taken up the bold challenge of ticking all the
-                boxes of an ideal botanicals supply. So that our clients no longer have to choose between quality,
-                effectiveness and sustainability.
-            </p>
-        </div>
-        <Button href="#" color="outline">Contact us</Button>
-    </text-image>
+        <p class="text light">Thanks to its innovative proprietary technology, BOTALYS is able to produce the most pristine
+            quality botanicals in the world.</p>
+        <p class="text light">From absolute purity to complete standardization, BOTALYS has taken up the bold challenge of ticking
+            all the boxes of an ideal botanicals supply. So that our clients no longer have to choose between quality,
+            effectiveness and sustainability.</p>
+        <botalys-button href="#" color="outline">Contact us</botalys-button>
+</text-image>
 
     <our-standards-tabs-container :items="[
         {
@@ -144,15 +142,21 @@ useSeoMeta({
             ]
         }
     ]" />
-    <text-image :imageSrc="River">
+    
+    <text-image :image-src="LeafDrop">
         <div>
-            <Tag color="yellow">Biomimetic Indoor Farming</Tag>
-            <h3 class="h3">We raise the bar for botanicals sourcing</h3>
+            <Tag color="yellow">Get in touch</Tag>
+            <h3 class="h3">Let's go further together</h3>
         </div>
-        <p class="text light">Thanks to its innovative proprietary technology, BOTALYS is able to produce the most pristine
-            quality botanicals in the world.</p>
-        <p class="text light">From absolute purity to complete standardization, BOTALYS has taken up the bold challenge of ticking
-            all the boxes of an ideal botanicals supply. So that our clients no longer have to choose between quality,
-            effectiveness and sustainability.</p>
-        <Button href="#" color="outline">Contact us</Button>
-</text-image></template>
+        <div>
+            <p class="text light">Thanks to its innovative proprietary technology, BOTALYS is able to produce the most pristine
+                quality botanicals in the world.</p>
+            <p class="text light">
+                From absolute purity to complete standardization, BOTALYS has taken up the bold challenge of ticking all the
+                boxes of an ideal botanicals supply. So that our clients no longer have to choose between quality,
+                effectiveness and sustainability.
+            </p>
+        </div>
+        <botalys-button href="#" color="outline">Contact us</botalys-button>
+    </text-image>
+    </template>

@@ -109,7 +109,7 @@ const currentTab = ref(0)
 
         &::before {
             content: attr(data-title);
-            font-family: "Sofia Pro";
+            font-family: "sofia-pro";
             font-weight: 300;
             font-size: 28px;
             line-height: 129%;

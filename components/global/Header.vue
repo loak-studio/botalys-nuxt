@@ -91,7 +91,7 @@ watch(() => route.fullPath, () => {
         </ul>
 
       </nav>
-      <Button :class="'header__contact ' + (displayMobileNavigation ? '':'header__contact--hidden')" color="header" href="/contact-us/">Contact us</Button>
+      <botalys-button :class="'header__contact ' + (displayMobileNavigation ? '':'header__contact--hidden')" color="header" href="/contact-us/">Contact us</botalys-button>
       <button class="header__toggle-menu" @click="toggleMenu">{{
         displayMobileNavigation ? 'close' : 'menu' }}</button>
     </header>

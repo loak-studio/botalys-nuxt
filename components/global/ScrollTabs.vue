@@ -63,7 +63,7 @@ onUnmounted(()=>{
             v-for="(item, index ) in items" :key="index">
             <div class="scroll-tabs__panel-content">
               <p :data-text="item.title" class="h3 scroll-tabs__panel-title">{{ item.text }}</p>
-            <Button :href="item.button.href" color="green">{{ item.button.label }}</Button>
+            <botalys-button :href="item.button.href" color="green">{{ item.button.label }}</botalys-button>
             </div>
             <figure class="scroll-tabs__image">
               <img :src="item.image" alt="" />
