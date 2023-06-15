@@ -19,11 +19,13 @@ const setFormToDisplay = (value) => {
             <contact-input name="job-title" label="Job title" required />
             <contact-input name="subject" label="Subject" required />
             <contact-textarea name="message" label="Message" required />
+      <input type="hidden" name="form-name" value="contact" />
             <botalys-button>Send message</botalys-button>
         </form>
 
         <form method="POST" name="jobs" action="/contact-us/success/" class="contact-form__form"
             :class="{ 'contact-form__form--displayed': formToDisplay == 'job' }" netlify>
+      <input type="hidden" name="form-name" value="jobs" />
             <contact-input name="email" type="email" label="Email" required />
             <contact-input name="subject" label="Subject" required />
             <contact-textarea name="message" label="Message" required />
