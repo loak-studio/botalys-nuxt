@@ -38,6 +38,7 @@ const setFormToDisplay = (value) => {
 <style lang="scss">
 .contact-form {
     background: var(--nandor);
+    border-radius: 0px 0px 40px 0px;
 }
 
 .contact-form__form {
@@ -46,7 +47,7 @@ const setFormToDisplay = (value) => {
     &--displayed {
         display: flex;
         flex-direction: column;
-        gap: 12px;
+        gap: 20px;
         align-items: flex-start;
     }
 }

@@ -29,7 +29,6 @@ input.addEventListener("change", (e) => {
 .file-input {
     position: relative;
     width: 100%;
-    margin-top: 20px;
     height: 60px;
 }
 

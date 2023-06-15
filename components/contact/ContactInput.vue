@@ -17,7 +17,6 @@ const {label, type, required, name} = defineProps({label:String, type:
   .input {
     position: relative;
     width: 100%;
-    margin-top: 20px;
   }
   .input::before {
     position: absolute;

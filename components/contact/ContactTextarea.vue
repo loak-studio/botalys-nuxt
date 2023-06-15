@@ -19,7 +19,6 @@ const { label, required, name } = defineProps({
 .textarea {
     position: relative;
     width: 100%;
-    margin-top: 20px;
 }
 
 .textarea textarea::placeholder {
