@@ -34,11 +34,10 @@
   ]" />
   <text-image :imageSrc="River">
     <div>
-      <Tag color="yellow">Biomimetic Indoor Farming</Tag>
-      <h3 class="h3">We raise the bar for botanicals sourcing</h3>
+      <Tag color="yellow">Get in touch</Tag>
+      <h3 class="h3">Let's go further together</h3>
     </div>
-    <p class="text">Thanks to its innovative proprietary technology, BOTALYS is able to produce the most pristine quality botanicals in the world.</p>
-    <p class="text">From absolute purity to complete standardization, BOTALYS has taken up the bold challenge of ticking all the boxes of an ideal botanicals supply. So that our clients no longer have to choose between quality, effectiveness and sustainability.</p>
+    <p class="text">Do you have a project in mind for which you wish to unlock the full potential of rare medicinal plants ? Are you interested in exploring the innovation opportunities offered by Biomimetic Indoor Farming? Or maybe you want to learn more about how phytonutrients and emerging trends can synergize into unique new Nutraceutical formulas? Whatever your needs are, we would love to hear from you and help you achieve your vision. Take the first step and reach out to us.</p>
     <botalys-button href="#" color="outline">Contact us</botalys-button>
   </text-image>
   <Footer />
