@@ -53,6 +53,9 @@ const { links } = defineProps({ links: Array })
 }
 
 @media (max-width: 800px) {
+    .breadcrumb{
+        display: none;
+    }
     .breadcrumb li {
         display: none;
     }
