@@ -24,7 +24,9 @@ onMounted(() => {
     })
 })
 onUnmounted(()=>{
-    tl.kill()
+    if(tl){
+        tl.kill()
+    }
 })
 </script>
 
