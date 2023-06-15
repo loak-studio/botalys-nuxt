@@ -171,6 +171,7 @@ onUnmounted(()=>{
   top: 0;
   z-index: -1;
   filter: brightness(.5);
+  background: var(--dark-jungle-green);
 
   & video {
     height: 100%;
