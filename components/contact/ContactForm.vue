@@ -3,20 +3,6 @@ const formToDisplay = ref('contact')
 const setFormToDisplay = (value) => {
     formToDisplay.value = value
 }
-const submitForm = (event) => {
-    event.preventDefault();
-
-    const myForm = event.target;
-    const formData = new FormData(myForm);
-
-    fetch("/", {
-        method: "POST",
-        headers: { "Content-Type": "application/x-www-form-urlencoded" },
-        body: new URLSearchParams(formData).toString(),
-    })
-        .then(() => console.log("Form successfully submitted"))
-        .catch((error) => alert(error));
-}
 </script>
 <template>
     <div class="contact-form">
@@ -26,19 +12,18 @@ const submitForm = (event) => {
             <button :class="{ 'contact-form__button--active': formToDisplay == 'job' }" class="contact-form__button h5"
                 @click="setFormToDisplay('job')">Join our team</button>
         </div>
-        <form method="POST" name="contact" @submit.prevent="submitForm" class="contact-form__form"
-            :class="{ 'contact-form__form--displayed': formToDisplay == 'contact' }" action="" netlify>
+        <form method="POST" name="contact" action="/contact-us/success/" class="contact-form__form"
+            :class="{ 'contact-form__form--displayed': formToDisplay == 'contact' }" data-netlify="true">
             <contact-input name="email" type="email" label="Email" required />
             <contact-input name="company" label="Company" required />
             <contact-input name="job-title" label="Job title" required />
             <contact-input name="subject" label="Subject" required />
             <contact-textarea name="message" label="Message" required />
-
             <botalys-button>Send message</botalys-button>
         </form>
 
-        <form method="POST" name="jobs" @submit.prevent="submitForm" class="contact-form__form"
-            :class="{ 'contact-form__form--displayed': formToDisplay == 'job' }" action="" netlify>
+        <form method="POST" name="jobs" action="/contact-us/success/" class="contact-form__form"
+            :class="{ 'contact-form__form--displayed': formToDisplay == 'job' }" data-netlify="true">
             <contact-input name="email" type="email" label="Email" required />
             <contact-input name="subject" label="Subject" required />
             <contact-textarea name="message" label="Message" required />
