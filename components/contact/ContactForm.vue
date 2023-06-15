@@ -26,7 +26,7 @@ const submitForm = (event) => {
             <button :class="{ 'contact-form__button--active': formToDisplay == 'job' }" class="contact-form__button h5"
                 @click="setFormToDisplay('job')">Join our team</button>
         </div>
-        <form name="contact" @submit.prevent="submitForm" class="contact-form__form"
+        <form method="POST" name="contact" @submit.prevent="submitForm" class="contact-form__form"
             :class="{ 'contact-form__form--displayed': formToDisplay == 'contact' }" action="" netlify>
             <contact-input name="email" type="email" label="Email" required />
             <contact-input name="company" label="Company" required />
@@ -37,7 +37,7 @@ const submitForm = (event) => {
             <botalys-button>Send message</botalys-button>
         </form>
 
-        <form name="jobs" @submit.prevent="submitForm" class="contact-form__form"
+        <form method="POST" name="jobs" @submit.prevent="submitForm" class="contact-form__form"
             :class="{ 'contact-form__form--displayed': formToDisplay == 'job' }" action="" netlify>
             <contact-input name="email" type="email" label="Email" required />
             <contact-input name="subject" label="Subject" required />
