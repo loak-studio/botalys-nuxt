@@ -222,6 +222,16 @@ watch(() => route.fullPath, () => {
 }
 
 @media (max-width: 1000px) {
+  .header__navigation {
+    .header__subnavigation{
+      pointer-events: none;
+    }
+  }
+  .header__navigation--mobile-display{
+    .header__subnavigation{
+      pointer-events: all;
+    }
+  }
   .header:not(.header--display-nav) .header__navigation, .header:not(.header--display-nav) .header__contact{
     pointer-events: none;
   }
@@ -230,7 +240,7 @@ watch(() => route.fullPath, () => {
     &.header--transparent nav.header__navigation > ul > li > .text{
       color: var(--dark-jungle-green)
     }
-    &__list {
+    .header__list {
       .text {
         font-size: 1.5rem;
       }
