@@ -12,8 +12,8 @@ const setFormToDisplay = (value) => {
             <button :class="{ 'contact-form__button--active': formToDisplay == 'job' }" class="contact-form__button h5"
                 @click="setFormToDisplay('job')">Join our team</button>
         </div>
-        <form method="POST" name="contact" action="/contact-us/success/" class="contact-form__form"
-            :class="{ 'contact-form__form--displayed': formToDisplay == 'contact' }" data-netlify="true">
+        <form method="POST" action="/contact-us/success/" class="contact-form__form"
+            :class="{ 'contact-form__form--displayed': formToDisplay == 'contact' }" netlify>
             <contact-input name="email" type="email" label="Email" required />
             <contact-input name="company" label="Company" required />
             <contact-input name="job-title" label="Job title" required />
@@ -23,7 +23,7 @@ const setFormToDisplay = (value) => {
         </form>
 
         <form method="POST" name="jobs" action="/contact-us/success/" class="contact-form__form"
-            :class="{ 'contact-form__form--displayed': formToDisplay == 'job' }" data-netlify="true">
+            :class="{ 'contact-form__form--displayed': formToDisplay == 'job' }" netlify>
             <contact-input name="email" type="email" label="Email" required />
             <contact-input name="subject" label="Subject" required />
             <contact-textarea name="message" label="Message" required />
