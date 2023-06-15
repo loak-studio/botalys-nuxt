@@ -3,7 +3,7 @@ const {color} = defineProps({color:String})
 </script>
 
 <template>
-  <span :class="'tag text tag--' + color">
+  <span :class="'tag text tag--' + (color ?? '')">
     <slot/>
   </span>
 </template>
