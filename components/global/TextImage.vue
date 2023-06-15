@@ -125,6 +125,7 @@ onUnmounted(()=>{
     .text-image {
         padding-top: 96px;
         padding-bottom: 0;
+        padding-bottom: 3rem;
     }
 
     .text-image__figure {
