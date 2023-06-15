@@ -19,6 +19,7 @@ const { href, color } = defineProps({
 <style lang="scss">
 .button {
   text-decoration: none;
+  cursor: pointer;
   border-radius: 0 20px;
   padding: 12px 40px;
   display: inline-block;
