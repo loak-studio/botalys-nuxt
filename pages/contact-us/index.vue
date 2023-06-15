@@ -109,6 +109,7 @@ useSeoMeta({
   @media (max-width:809px) {
     .contact{
       min-height: 0;
+      padding-bottom: 64px;
     }
     .contact__container{
       padding: 0;
@@ -117,10 +118,10 @@ useSeoMeta({
       max-width: none;
     }
     .contact__title{
-      margin-bottom: 1rem;
+      margin-bottom: 0rem;
     }
     .contact__title-container{
-      padding: 0 1rem;
+      padding: 40px 1rem;
     }
     .contact__image{
       display: none;
