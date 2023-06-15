@@ -39,7 +39,7 @@ const { links, image, title, paragraphs } = defineProps({ links: Array, image:St
     justify-content: space-between;
     padding-left: 4px;
     padding-top: 10px;
-    padding-right: 79px;
+    padding-right: 136px;
     gap:1rem;
 }
 .hero-illustration__text{
@@ -79,6 +79,7 @@ const { links, image, title, paragraphs } = defineProps({ links: Array, image:St
     }
     .hero-illustration__content{
         flex-direction: column;
+        padding-right: 0;
     }
     .hero-illustration__figure{
         width: 95px;

@@ -69,7 +69,7 @@ onUnmounted(()=>{
     top: 84px;
     overflow: hidden;
     border-radius: 0px 0px 276px 0px;
-
+    filter: brightness(.7);
     img {
         height: 100%;
         width: 100%;
