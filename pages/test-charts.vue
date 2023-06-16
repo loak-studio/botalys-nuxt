@@ -1,10 +1,18 @@
 <template>
-    <div>
+    <div class="chart-container">
         <canvas id="chart" />
     </div>
 </template>
 
 <style>
+.chart-container{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10rem 2rem;
+}
 #chart {
     max-width: 500px;
     max-height: 400px;
