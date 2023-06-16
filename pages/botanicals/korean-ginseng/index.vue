@@ -39,4 +39,5 @@ useSeoMeta({
     </div>
     <botalys-button href="#" color="outline">Delve into the Challenges of Ginseng Sourcing</botalys-button>
   </text-image>
+  <koreanginseng-stats/>
 </template>
