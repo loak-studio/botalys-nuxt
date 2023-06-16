@@ -19,9 +19,4 @@
 .flagship-botanical__title{
     margin-bottom: 2rem;
 }
-@media (max-width:809px) {
-    .flashship-botanical{
-        padding: 0 1rem;
-    }
-}
 </style>

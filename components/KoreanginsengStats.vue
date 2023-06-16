@@ -20,9 +20,16 @@
     padding-top: 120px;
 
 }
+@media (max-width:900px) {
+    .koreanginseng-stats{
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+}
 @media (max-width:809px) {
     .koreanginseng-stats{
         padding-top: 40px;
     }
+    
 }
 </style>
