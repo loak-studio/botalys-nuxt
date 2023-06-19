@@ -23,9 +23,10 @@
     border-top: 2px solid var(--nandor);
     border-right: 2px solid var(--nandor);
     padding-top: 120px;
+    padding-bottom: 120px;
 
 }
-@media (max-width:900px) {
+@media (max-width:1100px) {
     .koreanginseng-stats{
         padding-left: 1rem;
         padding-right: 1rem;
@@ -34,6 +35,7 @@
 @media (max-width:809px) {
     .koreanginseng-stats{
         padding-top: 40px;
+        padding-bottom: 40px;
     }
     
 }

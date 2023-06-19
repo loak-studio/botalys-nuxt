@@ -116,4 +116,48 @@
         margin-top: 1rem;
     }
 }
+
+@media (max-width: 1000px) {
+    .rare-ginsenosides{
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+    }
+    .rare-ginsenosides__right{
+        padding-left: 0;
+    }
+    .rare-ginsenosides__right::before{
+        display: none;
+    }
+    .rare-ginsenosides__list:nth-child(2){
+        margin-top: 0rem;
+    }
+    .rare-ginsenosides__list:nth-child(1){
+        margin-top: 0;
+    }
+    .rare-ginsenosides__title{
+        flex-direction: column;
+        align-items: flex-start;
+        gap:0;
+    }
+    .rare-ginsenosides__percent{
+        font-size: 96px;
+    }
+    .rare-ginsenosides__right{
+        display: flex;
+        flex-direction: row;
+        gap:3rem;
+    }
+}
+@media (max-width:809px) {
+        .rare-ginsenosides{
+            margin-top: 0;
+        }
+
+    .rare-ginsenosides__right{
+        display: flex;
+        flex-direction: column;
+        gap:2rem;
+    }
+}
 </style>
