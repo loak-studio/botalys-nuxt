@@ -1,6 +1,5 @@
 <script setup>
 const { links, image, title, paragraphs, top , right, height, width } = defineProps({ links: Array, image:String, title:String, paragraphs:Array, top:String, right:String, width:String, height:String })
-console.log(top)
 </script>
 <template>
     <div class="hero-overflow__parent">
