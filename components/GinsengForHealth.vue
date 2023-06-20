@@ -38,12 +38,12 @@ const items = [
         image: Liver
     },
     {
-        label: 'Cardiovascular Health (soon)',
+        label: 'Cardiovascular Health',
         href: '#',
         image: Brain
     },
     {
-        label: 'Sports Nutrition (soon)',
+        label: 'Sports Nutrition',
         href: '#',
         image: Brain
     },
@@ -54,6 +54,7 @@ const swiperParams = {
     slidesPerView: 1.5,
     centeredSlides:true,
     loop:true,
+    spaceBetween:20,
     breakpoints: {
         1000: {
             slidesPerView: 3
@@ -168,12 +169,13 @@ const slidePrev = () => {
     aspect-ratio: 1/1;
     transition: max-width 300ms;
     margin-bottom: 48px;
-    mix-blend-mode: lum;
+    background: var(--half-spanish-white);
 
     img {
         height: 100%;
         width: 100%;
         object-fit: contain;
+        mix-blend-mode: luminosity;
     }
 
 }
@@ -233,6 +235,9 @@ const slidePrev = () => {
 }
 
 @media (max-width:809px) {
+    .ginseng-health__slider{
+        margin-top: 0;
+    }
     .ginseng-health {
         padding: 40px 0;
     }
@@ -247,7 +252,7 @@ const slidePrev = () => {
     }
 
     .ginseng-health__figure {
-        max-width: 120px;
+        max-width: 200px;
 
     }
 
