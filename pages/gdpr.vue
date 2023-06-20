@@ -1,5 +1,14 @@
 <script setup>
 import MarkdownIt from "markdown-it"
+const title= 'General Data Protection Regulation - Botalys'
+useSeoMeta({
+  title: title,
+  ogTitle: title,
+  twitterTitle: title,
+  ogImage: 'https://botalys.com/share.png',
+  twitterImage: 'https://botalys.com/share.png',
+  twitterCard: 'summary_large_image',
+})
 const content = `
 
 # Privacy Policy for BOTALYS
