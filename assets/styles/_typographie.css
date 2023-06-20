@@ -71,6 +71,13 @@
   font-weight: 300;
 }
 
+.markdown ul{
+  font-family: 'sofia-pro';
+  padding: 1rem 0 0  1rem;
+  line-height: 150%;
+  list-style: disc;
+}
+
 @media (max-width: 1000px) {
   .h1,
   .markdown h1 {
