@@ -28,8 +28,10 @@ useHead({
 </script>
 <template>
     <div class="error-page">
-        <div class="error-page__container" :style="`background-image:url(${BackgroundImage})`">
-
+        <div class="error-page__container" >
+            <figure class="error-page__background">
+                <img :src="BackgroundImage" alt="">
+            </figure>
             <Header :is-frontpage="true" />
             <div  class="error__parent">
                 <section class="error">
@@ -52,6 +54,19 @@ useHead({
 <style lang="scss">
 .error__parent {
     padding: 0 4px;
+}
+
+.error-page__background{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    img{
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        filter: brightness(0.7);
+    }
 }
 
 .error-page__container{
