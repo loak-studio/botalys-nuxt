@@ -111,6 +111,9 @@ onUnmounted(()=>{
   <section class="hero">
     <div class="hero__background">
       <video autoplay muted loop src="~/assets/jungle.mp4"></video>
+      <figure>
+        <img src="~/assets/images/river-2.jpeg" loading="lazy" alt="">
+      </figure>
     </div>
     <Header class="hero__header" :isFrontpage="true" />
     <div class="hero__container">
@@ -321,6 +324,27 @@ onUnmounted(()=>{
     gap: 1rem;
     justify-content: center;
   }
+}
+
+@media (max-width:809px) {
+  .hero__background {
+    overflow: hidden;
+  & video {
+    display: none;
+  }
+  & figure{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    img{
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+}
+
 }
 
 @media (max-width: 751px) {
