@@ -1,5 +1,6 @@
 <script setup>
 import Brain from "~/assets/images/illustrations/brain.png"
+import PreclinicalStudies from "~/components/botanicals/korean-ginseng/ginseng-for-mental-stamina/PreclinicalStudies.vue";
 const title = "Ginseng for mental stamina - Botalys"
 useSeoMeta({
   title: title,
@@ -30,7 +31,6 @@ useSeoMeta({
   />
   <botanicals-korean-ginseng-ginseng-for-mental-stamina-specifically-developped-to-promote-mental-stamina/>
   <botanicals-korean-ginseng-ginseng-for-mental-stamina-ginseng-proprietary-data/>
-  <div style="margin-top: 100px;">
-
-  </div>
+  <preclinical-studies/>
+  <botanicals-korean-ginseng-ginseng-for-mental-stamina-first-round/>
 </template>

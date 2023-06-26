@@ -2,19 +2,19 @@
     <div class="ginseng-proprietary__parent">
         <section class="ginseng-proprietary">
             <div class="ginseng-proprietary__grid-item">
-                <span class="ginseng-proprietary__value">&gt;9000</span>
+                <span class="outline-yellow-number">&gt;9000</span>
                 <span class="h5">Scientific publications about Korean ginseng and its constituents</span>
             </div>
             <div class="ginseng-proprietary__grid-item">
-                <span class="ginseng-proprietary__value">6</span>
+                <span class="outline-yellow-number">6</span>
                 <span class="h5">Preclinical Studies</span>
             </div>
             <div class="ginseng-proprietary__grid-item">
-                <span class="ginseng-proprietary__value">1</span>
+                <span class="outline-yellow-number">1</span>
                 <span class="h5">Peer-reviewed clinical trial</span>
             </div>
             <div class="ginseng-proprietary__grid-item">
-                <span class="ginseng-proprietary__value">1</span>
+                <span class="outline-yellow-number">1</span>
                 <span class="h5">Perceived efficacy study</span>
             </div>
             <div class="ginseng-proprietary__indication">
@@ -70,14 +70,6 @@
     padding-top: 63px;
 }
 
-.ginseng-proprietary__value {
-    font-size: 96px;
-    font-family: "sofia-pro";
-    font-weight: 700;
-    line-height: 104%;
-    color: var(--dark-jungle-green);
-    -webkit-text-stroke: 2px var(--mikado-yellow);
-}
 
 .ginseng-proprietary__indication {
     position: absolute;
@@ -139,6 +131,12 @@
     }
 }
 
+@media (max-width: 1440px) {
+        .ginseng-proprietary__parent{
+    border-radius: 0px 0px 50px 0px;
+        }
+}
+
 @media (max-width: 1100px) {
     
 .ginseng-proprietary__bottom-text {
@@ -148,9 +146,6 @@
 }
 
 @media (max-width: 950px) {
-    .ginseng-proprietary__value {
-        font-size: 48px;
-    }
 
     .ginseng-proprietary__grid-item {
         padding-top: 24px;
