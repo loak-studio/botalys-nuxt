@@ -9,7 +9,7 @@
                 </div>
             </div>
             <div class="rare-ginsenosides__graph">
-                <ChartsRareGinsenosides/>
+                <BotanicalsKoreanGinsengIndexRareGinsenosidesChart/>
             </div>
         </div>
         <div class="rare-ginsenosides__right">

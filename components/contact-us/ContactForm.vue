@@ -14,11 +14,11 @@ const setFormToDisplay = (value) => {
         </div>
         <form method="POST" action="/contact-us/success/" class="contact-form__form"
             :class="{ 'contact-form__form--displayed': formToDisplay == 'contact' }" netlify>
-            <contact-input name="email" type="email" label="Email" required />
-            <contact-input name="company" label="Company" required />
-            <contact-input name="job-title" label="Job title" required />
-            <contact-input name="subject" label="Subject" required />
-            <contact-textarea name="message" label="Message" required />
+            <contact-us-contact-input name="email" type="email" label="Email" required />
+            <contact-us-contact-input name="company" label="Company" required />
+            <contact-us-contact-input name="job-title" label="Job title" required />
+            <contact-us-contact-input name="subject" label="Subject" required />
+            <contact-us-contact-textarea name="message" label="Message" required />
       <input type="hidden" name="form-name" value="contact" />
             <botalys-button>Send message</botalys-button>
         </form>
@@ -26,10 +26,10 @@ const setFormToDisplay = (value) => {
         <form method="POST" name="jobs" action="/contact-us/success/" class="contact-form__form"
             :class="{ 'contact-form__form--displayed': formToDisplay == 'job' }" netlify>
       <input type="hidden" name="form-name" value="jobs" />
-            <contact-input name="email" type="email" label="Email" required />
-            <contact-input name="subject" label="Subject" required />
-            <contact-textarea name="message" label="Message" required />
-            <contact-fileinput name="documents" label="Documents" />
+            <contact-us-contact-input name="email" type="email" label="Email" required />
+            <contact-us-contact-input name="subject" label="Subject" required />
+            <contact-us-contact-textarea name="message" label="Message" required />
+            <contact-us-contact-fileinput name="documents" label="Documents" />
             <botalys-button>Send message</botalys-button>
         </form>
     </div>

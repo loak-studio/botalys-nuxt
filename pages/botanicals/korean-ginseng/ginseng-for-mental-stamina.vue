@@ -1,6 +1,5 @@
 <script setup>
 import Brain from "~/assets/images/illustrations/brain.png"
-import GinsengProprietaryData from "~/components/GinsengProprietaryData.vue";
 const title = "Ginseng for mental stamina - Botalys"
 useSeoMeta({
   title: title,
@@ -29,8 +28,8 @@ useSeoMeta({
     'And while its reputation as a tonic, aphrodisiac and elixir of longevity dates back several millennia, the benefits of this ancient panacea remain more relevant than ever in the field of medicinal plants.'
   ]"
   />
-  <specifically-developped-to-promote-mental-stamina/>
-  <ginseng-proprietary-data/>
+  <botanicals-korean-ginseng-ginseng-for-mental-stamina-specifically-developped-to-promote-mental-stamina/>
+  <botanicals-korean-ginseng-ginseng-for-mental-stamina-ginseng-proprietary-data/>
   <div style="margin-top: 100px;">
 
   </div>

@@ -1,7 +1,6 @@
 <script setup>
 import Ginseng from "~/assets/images/ginseng-flower.png"
 import Moutain from "~/assets/images/korean-ginseng-moutain.jpeg"
-import GinsengForMentalStamina from "~/components/GinsengForMentalStamina.vue";
 const title = "Korean Ginseng - Botalys"
 useSeoMeta({
   title: title,
@@ -40,7 +39,7 @@ useSeoMeta({
     </div>
     <botalys-button href="#" color="outline">Delve into the Challenges of Ginseng Sourcing</botalys-button>
   </text-image>
-  <koreanginseng-stats/>
-  <GinsengForMentalStamina/>
-  <GinsengForHealth/>
+  <BotanicalsKoreanGinsengIndexKoreanginsengStats/>
+  <BotanicalsKoreanGinsengIndexGinsengForMentalStamina/>
+  <BotanicalsKoreanGinsengIndexGinsengForHealth/>
 </template>

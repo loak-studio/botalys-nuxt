@@ -1,9 +1,9 @@
 <template>
     <div class="koreanginseng-stats__parent">
         <section class="koreanginseng-stats">
-           <flasgship-botanical/>
-           <koreanginseng-table/>
-           <rare-ginsenosides/>
+           <BotanicalsKoreanGinsengIndexFlagshipBotanical/>
+           <botanicals-korean-ginseng-index-koreanginseng-table/>
+           <botanicals-korean-ginseng-index-rare-ginsenosides/>
            <more-details>
             <span class="bold">Jin Y, Kim YJ, Jeon JN, Wang C, Min JW, Noh HY, Yang DC (2015) </span>– <span class="italic">« Effect of white, red and black ginseng on
             physicochemical properties and ginsenosides. »</span> Plant Foods Hum Nutr. 2015 Jun;70(2):141-5.

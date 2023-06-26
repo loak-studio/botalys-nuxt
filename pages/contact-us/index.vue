@@ -31,7 +31,7 @@ useSeoMeta({
             <Tag>Get in touch</Tag>
           <h1 class="h2 contact__title">Send us a message</h1>
           </div>
-          <contact-form/>
+          <contact-us-contact-form/>
         </div>
       </div>
     </section>
