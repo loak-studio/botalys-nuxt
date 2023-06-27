@@ -10,7 +10,7 @@
             </div>
             <div class="preclinical-studies__number">
                 <span class="outline-yellow-number">22</span>
-                <span class="preclinical-studies__value-title h5">rats</span>
+                <span class="preclinical-studies__value-title h5">Rats</span>
             </div>
             <div class="preclinical-studies__number">
                 <span class="outline-yellow-number">50</span>
