@@ -17,6 +17,7 @@
     "gsap": "^3.11.5",
     "markdown-it": "^13.0.1",
     "sass": "^1.62.1",
-    "swiper": "^9.4.1"
+    "swiper": "^9.4.1",
+    "ticker-board": "^1.0.5"
   }
 }
