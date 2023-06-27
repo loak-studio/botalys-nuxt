@@ -12,11 +12,11 @@ onMounted(() => {
         trigger: ".scroll-tabs__trigger",
         markers: false,
         start: "50% 50%",
-        end: "+=" + items.length * 300,
+        end: "+=" + items.length * 200,
         pin: ".scroll-tabs__trigger",
         snap:{
           snapTo:1/(items.length-1),
-          duration:.5
+          duration:0.1
         }
       }
     })
