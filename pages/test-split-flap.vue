@@ -23,19 +23,28 @@ useHead({
         }
     ]
 })
+
+const size = 12
+
+const getMessage = (value)=>{
+    let message = ""
+    let spacesNeeded = size - value.toString().length  - 1 - 5 //1 is for the L and 5 for the water letters
+    message = ' '.repeat(spacesNeeded) + `${value.toString()}` + "L"
+    return "WATER" + message
+}
+
 onMounted(() => {
    const board = new Board(boa.value,{
     count:1,
-    size:7,
+    size,
     delay:1,
     theme:'light',
    })
-   console.log(board)
-   board.updateMessages(['500 L'])
    let value = 500
+   board.updateMessages([getMessage(value)])
    setInterval(()=>{
     value = value + 16
-    board.updateMessages([value + ' L'])
+    board.updateMessages([getMessage(value)])
    }, 3000)
 })
 
