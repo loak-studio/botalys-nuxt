@@ -1,6 +1,5 @@
 <script setup>
 import Brain from "~/assets/images/illustrations/brain.png"
-import PreclinicalStudies from "~/components/botanicals/korean-ginseng/ginseng-for-mental-stamina/PreclinicalStudies.vue";
 const title = "Ginseng for mental stamina - Botalys"
 useSeoMeta({
   title: title,
@@ -34,5 +33,12 @@ useSeoMeta({
   <preclinical-studies/>
   <botanicals-korean-ginseng-ginseng-for-mental-stamina-preclinical-studies-text-and-graphs/>
   <botanicals-korean-ginseng-ginseng-for-mental-stamina-clinical-study/>
-  <botanicals-korean-ginseng-ginseng-for-mental-stamina-clinical-study-text-and-graphs/>
+  <title-with-double-graphs>
+    <template v-slot:title>
+      ok
+    </template>
+    <template v-slot:details>
+      The attention score was assessed using the D2-test, and measured the daily difference in error rate at the beginning and end of the day. The results of the control show a clear increase of the error rate after 5 days, due to the accumulated fatigue. On the contrary, in the supplemented group, a significant decrease in the error rate was observed from day 1.
+    </template>
+    </title-with-double-graphs>
 </template>
