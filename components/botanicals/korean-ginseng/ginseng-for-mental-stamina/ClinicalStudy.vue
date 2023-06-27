@@ -22,12 +22,39 @@
             </div>
         </div>
     </div>
+    <div class="clinical-after__parent">
+        <div class="clinical-after">
+            <div class="clinical-after__container">
+                <p class="text">Following encouraging preclinical results, a Pilot, Randomized, Double-Blind, Placebo-Controlled Crossover clinical study was conducted to study BOTALYS red ginseng’s effects on mental stamina.</p>
+                <p class="text">The study was carried out in a call-center; a typical model for high workload and stress, and measured how BOTALYS red ginseng supplementation could impact focus, stress and memory over the course of 12 days.</p>
+            </div>
+        </div>
+    </div>
 </template>
 
 <style lang="scss">
-.clinical-before__parent {
+.clinical-before__parent, .clinical-after__parent {
     padding: 0 4px;
 }
+.clinical-after{
+    border-left: 2px solid var(--nandor);
+    border-right: 2px solid var(--nandor);
+    max-width: 1296px;
+    width: 100%;
+    margin: 0 auto;
+}
+.clinical-after__container{
+    max-width: 1048px;
+    margin: 0 auto;
+    padding-top: 48px;
+    display: flex;
+    flex-direction: column;
+    gap:1rem;
+    .text{
+        max-width: 840px;
+    }
+}
+
 
 .clinical-before {
     max-width: 1296px;
@@ -75,6 +102,11 @@
         .clinical__parent{
             border-radius:  0 0 0 50px ;
         }
+}
+@media (max-width: 1100px) {
+    .clinical-after__container{
+        padding: 40px 1rem 0 1rem;
+    }
 }
 @media (max-width:809px) {
     .preclinical-before {
