@@ -32,5 +32,7 @@ useSeoMeta({
   <botanicals-korean-ginseng-ginseng-for-mental-stamina-specifically-developped-to-promote-mental-stamina/>
   <botanicals-korean-ginseng-ginseng-for-mental-stamina-ginseng-proprietary-data/>
   <preclinical-studies/>
-  <botanicals-korean-ginseng-ginseng-for-mental-stamina-first-round/>
+  <botanicals-korean-ginseng-ginseng-for-mental-stamina-preclinical-studies-text-and-graphs/>
+  <botanicals-korean-ginseng-ginseng-for-mental-stamina-clinical-study/>
+  <botanicals-korean-ginseng-ginseng-for-mental-stamina-clinical-study-text-and-graphs/>
 </template>

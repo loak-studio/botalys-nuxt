@@ -1,0 +1,96 @@
+<template>
+    <div class="clinical-before__parent">
+        <div class="clinical-before"/>
+    </div>
+    <div class="clinical__parent">
+        <div class="clinical">
+            <div class="clinical__title">
+                <Tag color="yellow">Proprietary Studies</Tag>
+                <h2 class="h2">Clinical studies</h2>
+            </div>
+            <div class="clinical__number">
+                <span class="outline-yellow-number">50</span>
+                <span class="clinical__value-title h5">Participants</span>
+            </div>
+            <div class="clinical__number">
+                <span class="outline-yellow-number">400</span>
+                <span class="clinical__value-title h5">mg/day</span>
+            </div>
+            <div class="clinical__number">
+                <span class="outline-yellow-number">2</span>
+                <span class="clinical__value-title h5">Weeks</span>
+            </div>
+        </div>
+    </div>
+</template>
+
+<style lang="scss">
+.clinical-before__parent {
+    padding: 0 4px;
+}
+
+.clinical-before {
+    max-width: 1296px;
+    height: 120px;
+    width: 100%;
+    margin: 0 auto;
+    border-left: 2px solid var(--nandor);
+    border-right: 2px solid var(--nandor);
+    border-top: 2px solid var(--nandor);
+}
+
+.clinical__parent{
+    background: var(--dark-jungle-green);
+    max-width: 1440px;
+    border-radius: 0px 0px 0px 96px; 
+    margin: 0 auto;
+    padding: 0 4px;
+}
+.clinical{
+    border-left: 2px solid var(--nandor);
+    border-radius: 2px solid var(--nandor);
+    margin: 0 auto;
+    max-width: 1296px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 49% 17% 17% 17%;
+}
+.clinical__number{
+    display: flex;
+    flex-direction: column;
+    padding: 24px;
+    justify-content: flex-end;
+}
+.clinical__title{
+    padding: 24px;
+    padding-top: 123px;
+    .h2{
+        color: var(--half-spanish-white)
+    }
+}
+.clinical__value-title{
+    color: var(--half-spanish-white)
+}
+@media (max-width: 1440px) {
+        .clinical__parent{
+            border-radius:  0 0 0 50px ;
+        }
+}
+@media (max-width:809px) {
+    .preclinical-before {
+        height: 40px;
+    }
+    .clinical__parent{
+        border-radius: 0;
+    }
+    .clinical{
+        grid-template-columns: repeat(1, minmax(0,1fr));
+    }
+    .clinical__title{
+        padding: 1rem;
+    }
+    .clinical__number{
+        padding: 1rem;
+    }
+}
+</style>
