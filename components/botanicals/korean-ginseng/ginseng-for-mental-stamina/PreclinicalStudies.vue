@@ -14,11 +14,11 @@
             </div>
             <div class="preclinical-studies__number">
                 <span class="outline-yellow-number">50</span>
-                <span class="preclinical-studies__value-title h5">rats</span>
+                <span class="preclinical-studies__value-title h5">mg/kg/day</span>
             </div>
             <div class="preclinical-studies__number">
                 <span class="outline-yellow-number">8</span>
-                <span class="preclinical-studies__value-title h5">rats</span>
+                <span class="preclinical-studies__value-title h5">Days</span>
             </div>
         </div>
     </div>
