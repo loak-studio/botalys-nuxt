@@ -1,6 +1,6 @@
 <template>
     <div class="split-flap">
-        <span id="boa"></span>
+        <span ref="boa"></span>
     </div>
 </template>
 
@@ -11,13 +11,20 @@
     align-items: center;
     height: 500px;
 }
+
 </style>
 
 <script setup>
-import { Board } from "ticker-board"
 const boa = ref()
+useHead({
+    script:[
+        {
+            src:'/ticker-board.min.js'
+        }
+    ]
+})
 onMounted(() => {
-   const board = new Board(document.querySelector('#boa'),{
+   const board = new Board(boa.value,{
     count:1,
     size:5,
     delay:1,
