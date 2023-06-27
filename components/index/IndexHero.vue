@@ -181,6 +181,9 @@ onUnmounted(()=>{
     width: 100%;
     object-fit: cover;
   }
+  & figure{
+    display: none;
+  }
 }
 
 .hero__tagline {
@@ -333,6 +336,7 @@ onUnmounted(()=>{
     display: none;
   }
   & figure{
+    display: block;
     height: 100%;
     width: 100%;
     object-fit: cover;
