@@ -26,7 +26,7 @@ useHead({
 onMounted(() => {
    const board = new Board(boa.value,{
     count:1,
-    size:5,
+    size:7,
     delay:1,
     theme:'light',
    })
