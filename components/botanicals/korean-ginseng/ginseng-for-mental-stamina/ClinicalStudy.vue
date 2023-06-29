@@ -109,6 +109,9 @@
     }
 }
 @media (max-width:809px) {
+    .clinical-before{
+        height: 40px;
+    }
     .preclinical-before {
         height: 40px;
     }
