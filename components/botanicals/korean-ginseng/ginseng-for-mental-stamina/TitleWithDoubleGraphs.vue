@@ -1,6 +1,10 @@
+<script setup>
+const {last} = defineProps({last:Boolean})
+</script>
+
 <template>
     <div class="double-graph__parent">
-        <div class="double-graph">
+        <div :class="{'double-graph__last':last}" class="double-graph">
             <div class="double-graph__title-container">
                 <h3 class="h4 double-graph__title">
                     <slot name="title" />
@@ -21,9 +25,11 @@
                     <slot name="graph-2" />
                 </div>
             </div>
-            <more-details>
+            <div class="double-graph__details">
+                <more-details>
                 <slot name="details" />
             </more-details>
+            </div>
         </div>
     </div>
 </template>
@@ -87,8 +93,33 @@
     margin-bottom: 100px;
 }
 
-.double-graph__parent:last-of-type .double-graph{
-    border-bottom: 2px solid var(--nandor);
+.double-graph__last{
     padding-bottom: 120px;
+}
+@media (max-width: 1100px) {
+    .double-graph__graphs{
+        flex-direction: column;
+        align-items: center;
+        gap:2rem;
+        padding: 0 1rem;
+    }
+    .double-graph__details{
+        padding: 0 1rem;
+    }
+}
+@media (max-width:809px) {
+    .double-graph__subtitle{
+        margin-bottom: 1rem;
+    }
+    .double-graph__last{
+        padding-bottom: 40px;
+    }
+    .double-graph__graphs{
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+    .double-graph__graphs svg{
+        width: 100%;
+    }
 }
 </style>

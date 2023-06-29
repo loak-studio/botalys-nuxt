@@ -24,7 +24,7 @@ useSeoMeta({
     ]" />
   <botanicals-korean-ginseng-ginseng-for-mental-stamina-specifically-developped-to-promote-mental-stamina />
   <botanicals-korean-ginseng-ginseng-for-mental-stamina-ginseng-proprietary-data />
-  <preclinical-studies />
+  <BotanicalsKoreanGinsengGinsengForMentalStaminaPreclinicalStudies/>
   <botanicals-korean-ginseng-ginseng-for-mental-stamina-preclinical-studies-text-and-graphs />
   <botanicals-korean-ginseng-ginseng-for-mental-stamina-clinical-study />
   <botanicals-korean-ginseng-ginseng-for-mental-stamina-title-with-double-graphs>
@@ -70,7 +70,7 @@ useSeoMeta({
       The stress score is a self-assessed value based on a questionnaire called Perceived Stress Scoring (PSS). In the control group, a significant increase in stress levels is observed after 5 days of work, while in the supplemented group, study showed significant attenuation of accumulated stress after 5 days.
     </template>
   </botanicals-korean-ginseng-ginseng-for-mental-stamina-title-with-double-graphs>
-  <botanicals-korean-ginseng-ginseng-for-mental-stamina-title-with-double-graphs>
+  <botanicals-korean-ginseng-ginseng-for-mental-stamina-title-with-double-graphs last>
     <template v-slot:title>
       Significant increase in MEMORY after <span class="h2">12</span> DAYS
     </template>
