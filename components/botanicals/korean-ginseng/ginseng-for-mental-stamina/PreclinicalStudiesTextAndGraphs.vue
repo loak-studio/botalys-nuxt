@@ -141,6 +141,12 @@
 }
 
 @media (max-width:809px) {
+    .first-round{
+        padding: 0rem 0rem 40px 0rem;
+    }
+    .first-round__chart-subtitle{
+        margin-bottom: 1rem;
+    }
     .first-round__texts {
         padding-bottom: 3rem;
     }
