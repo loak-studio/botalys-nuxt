@@ -43,9 +43,11 @@
                     </div>
                 </div>
             </div>
-            <more-details>
+            <div class="usage-grid__details">
+                <more-details>
                 The study was based on a self-assessment questionnaire and found that a large portion of consumers could feel BOTALYS red ginseng’s benefits on dynamism, mood stability, memory and even sleep quality after just 10 days, with the effects being incremental as the treatment was prolonged to 20 days.
             </more-details>
+            </div>
         </div>
     </div>
 </template>
@@ -94,8 +96,10 @@
         height: 2px;
         background: var(--dark-jungle-green);
         flex-grow: 1;
+        min-width: 1rem;
     }
     &::after{
+        min-width: 1rem;
         content:'';
         height: 2px;
         background: var(--dark-jungle-green);
@@ -147,5 +151,30 @@
 .usage-grid__value{
     font-family: 'bodoni-pt-variable';
     font-size: 136px;
+}
+@media (max-width: 1100px) {
+    .usage-grid__introduction{
+        padding: 0 1rem;
+    }
+    .usage-grid__details{
+        padding: 0 1rem;
+    }
+}
+@media (max-width:809px) {
+    .usage-grid__grid{
+        max-width: none;
+        column-gap: 0;
+        row-gap: 2rem;
+    }
+    .usage-grid__grid-item:nth-child(3)::before, .usage-grid__grid-item:nth-child(4)::before{
+        top:-1rem;
+    }
+    .usage-grid__grid-item:nth-child(1)::after{
+        left: 50%;
+    }
+    .usage-grid__value{
+        font-size: 3rem;
+        
+    }
 }
 </style>
