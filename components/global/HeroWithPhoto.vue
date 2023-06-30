@@ -1,12 +1,12 @@
 <script setup>
-const { title, paragraphs, image } = defineProps({ title: String, paragraphs: Array, image: String })
+const { title, paragraphs, image, breadcrumbLinks } = defineProps({ title: String, paragraphs: Array, image: String, breadcrumbLinks:Array })
 
 </script>
 <template>
     <div class="hero-photo__parent">
         <section class="hero-photo">
             <div class="hero-photo__top">
-                <breadcrumb :links="[{ label: 'Our Standards', href: '#' }]" />
+                <breadcrumb :links="breadcrumbLinks" />
                 <div class="hero-photo__title-container">
                     <h1 class="hero-photo__title h1">
                         {{ title }}

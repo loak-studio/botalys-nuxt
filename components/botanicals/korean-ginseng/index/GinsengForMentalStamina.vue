@@ -55,7 +55,7 @@ const statsItems = [
                 <img src="~/assets/images/illustrations/brain.svg" alt="">
             </figure>
             <div class="mental-stamina__button-container">
-                <BotalysButton color="yellow" href="#">Dive into our proprietary data</BotalysButton>
+                <BotalysButton color="yellow" href="/botanicals/korean-ginseng/ginseng-for-mental-stamina/">Dive into our proprietary data</BotalysButton>
             </div>
             <more-details>
                 * Based on a Proprietary Clinical Trial (50 participants, 400 mg/d, 2 weeks) <br />

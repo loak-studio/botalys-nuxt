@@ -41,7 +41,7 @@ useHead({
                     <div class="coming-soon__bottom">
                         <div class="coming-soon__content">
                             <p class="h4">We are currently exploring this territory. Our reviews for ginseng health applications will be available soon.</p>
-                            <botalys-button color="green" href="#">Back to Korean Ginseng</botalys-button>
+                            <botalys-button color="green" href="/botanicals/korean-ginseng/">Back to Korean Ginseng</botalys-button>
                         </div>
                     </div>
                 </section>

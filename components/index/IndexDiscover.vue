@@ -39,7 +39,7 @@ onMounted(()=>{
           <p class="h4 index-discover__paragraph">We make the impossible sourcing of rare botanicals possible and
             sustainable,
             allowing our clients to harness the full potential of biodiversity while preserving it.</p>
-          <botalys-button class="index-discover__button" href="#" color="green">Discover our approach</botalys-button>
+          <botalys-button class="index-discover__button" href="/our-approach/" color="green">Discover our approach</botalys-button>
         </div>
       </div>
       <Icon :color="colors.mikadoYellow" class="index-discover__icon"/>

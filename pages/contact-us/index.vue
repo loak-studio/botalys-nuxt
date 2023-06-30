@@ -18,7 +18,7 @@ useSeoMeta({
       <hr class="contact__line-2">
       <breadcrumb :links="[
         {
-          label:'Contact',
+          label:'Contact Us',
           href:'#'
         }
       ]"/>

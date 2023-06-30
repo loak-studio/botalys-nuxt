@@ -15,7 +15,10 @@ useSeoMeta({
 <template>
   <hero-overflow :links="[
     {
-      label: 'Korean Ginseng', href: '#'
+      label: 'Korean Ginseng', href: '/botanicals/korean-ginseng/'
+    },
+    {
+      label:'Ginseng for Mental Stamina', href:'/botanicals/korean-ginseng/ginseng-for-mental-stamina/'
     }
   ]" :blend-mode-luminosity="true" :image="Brain" title="Korean Ginseng" right="-214px" top="44px" width="597px"
     height="895px" :paragraphs="[

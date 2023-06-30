@@ -37,7 +37,7 @@ useSeoMeta({
       <p class="text">In recent years, word of ginseng’s extraordinary health benefits has spread across the globe, leading to an unprecedented explosion in demand.</p>
       <p class="text">But like any highly sought-after and valuable botanical, ginseng’s success comes at the price of serious supply and sustainability issues - making it increasingly challenging for meticulous brands to source high quality ginseng.</p>
     </div>
-    <botalys-button href="#" color="outline">Delve into the Challenges of Ginseng Sourcing</botalys-button>
+    <botalys-button href="/botanicals/korean-ginseng/ginseng-sourcing/" color="outline">Delve into the Challenges of Ginseng Sourcing</botalys-button>
   </text-image>
   <BotanicalsKoreanGinsengIndexKoreanginsengStats/>
   <BotanicalsKoreanGinsengIndexGinsengForMentalStamina/>

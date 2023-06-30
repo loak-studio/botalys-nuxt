@@ -12,6 +12,12 @@ useSeoMeta({
 
 <template>
   <hero-with-photo :image="Mountain" title="About us"
+  :breadcrumb-links="[
+    {
+      label:'About Us',
+      href:'#'
+    }
+  ]"
         :paragraphs="[
             `BOTALYS is an ambitious Belgian company dedicated to producing ultra-pure premium botanicals for health.`,
             `Our team of botanical explorers thrives on cultivating collective intelligence and harvesting daring ideas to put them at the service of human health and well-being.`

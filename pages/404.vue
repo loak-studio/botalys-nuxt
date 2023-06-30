@@ -41,7 +41,7 @@ useHead({
                     <div class="error__bottom">
                         <div class="error__content">
                             <p class="h4">You have gone too far in the jungle</p>
-                            <botalys-button color="outline" href="#">Back to basecamp</botalys-button>
+                            <botalys-button color="outline" href="/">Back to basecamp</botalys-button>
                         </div>
                     </div>
                 </section>

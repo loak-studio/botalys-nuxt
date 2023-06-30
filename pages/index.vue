@@ -9,7 +9,7 @@
       image: River,
       button: {
         label: 'Discover our Approach',
-        href: '#'
+        href: '/our-approach/'
       }
     },
 
@@ -19,7 +19,7 @@
       image: testtwo,
       button: {
         label: 'Discover our Standards',
-        href: '#'
+        href: '/our-standards/'
       }
     },
     {
@@ -27,8 +27,8 @@
       text: 'BOTALYS grows the most pristine botanicals in the world without plundering wild biotopes, ushering in a new era of truly sustainable phytoactive ingredients.',
       image: testasset,
       button: {
-        label: 'Discover our Standards',
-        href: '#'
+        label: 'Discover Real Sustainability',
+        href: '/sustainability/'
       }
     },
   ]" />
@@ -38,7 +38,7 @@
       <h3 class="h3">Let's go further together</h3>
     </div>
     <p class="text">Do you have a project in mind for which you wish to unlock the full potential of rare medicinal plants ? Are you interested in exploring the innovation opportunities offered by Biomimetic Indoor Farming? Or maybe you want to learn more about how phytonutrients and emerging trends can synergize into unique new Nutraceutical formulas? Whatever your needs are, we would love to hear from you and help you achieve your vision. Take the first step and reach out to us.</p>
-    <botalys-button href="#" color="outline">Contact us</botalys-button>
+    <botalys-button href="/contact-us/" color="outline">Contact us</botalys-button>
   </text-image>
   <Footer />
 </template>

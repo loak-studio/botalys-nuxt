@@ -7,7 +7,7 @@
       <p class="text index-harness__text">BOTALYS uses an innovative Biomimetic Indoor Farming technology to recreate the ideal wild
         conditions for rare botanicals to grow in. We develop pristine & potent botanical ingredients for the
         Nutraceutical and Cosmetic industries.</p>
-      <botalys-button href="#" color="green">About us</botalys-button>
+      <botalys-button href="/about-us/" color="green">About us</botalys-button>
       <hr class="index-harness__line-1"/>
       <hr class="index-harness__line-2"/>
       <hr class="index-harness__line-3"/>

@@ -34,7 +34,7 @@ useSeoMeta({
             formulas? Whatever your needs are, we would love to hear from you and help you achieve your vision. Take the
             first
             step and reach out to us.</p>
-        <botalys-button href="#" color="outline">Contact us</botalys-button>
+        <botalys-button href="/contact-us/" color="outline">Contact us</botalys-button>
 </text-image>
 </template>
 
