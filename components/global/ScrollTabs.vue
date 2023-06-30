@@ -29,8 +29,6 @@ onMounted(() => {
      
       }
       if (index < items.length - 1) {
-
-        tl.add(()=>{}, "+=5")
         tl.addLabel('panelend-' + index)
         tl.to(`.scroll-tabs__content > .scroll-tabs__panel:nth-child(${index + 1})`, { opacity: 0, y:50 }, 'panelend-' + index)
         tl.to(`.scroll-tabs__aside > *:nth-child(${index + 1})`, { background: 'rgb(230, 226, 201)', color: 'rgb(77, 89, 76)' }, 'panelend-' + index)
