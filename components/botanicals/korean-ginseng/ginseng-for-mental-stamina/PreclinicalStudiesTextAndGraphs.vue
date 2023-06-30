@@ -94,6 +94,7 @@
 }
 
 .first-round__chart-item {
+    flex-grow: 1;
     svg {
         width: 100%;
         object-fit: contain;
