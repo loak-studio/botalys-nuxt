@@ -23,4 +23,5 @@ useSeoMeta({
             `Our team of botanical explorers thrives on cultivating collective intelligence and harvesting daring ideas to put them at the service of human health and well-being.`
             ]" />
             <about-us-board-of-directors/>
+            <about-us-a-botanical-odyssey/>
 </template>
