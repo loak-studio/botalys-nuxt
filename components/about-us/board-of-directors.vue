@@ -187,6 +187,7 @@ const removePopup = () => {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    color: var(--dark-jungle-green)
 }
 .board-directors__pop-up-content{
     color: var(--half-spanish-white);
@@ -267,7 +268,17 @@ const removePopup = () => {
     gap: 10px;
 }
 
+@media (max-width: 900px) {
+    .board-directors__title{
+        padding: 0 1rem;
+    }
+}
+
 @media (max-width:809px) {
+    .board-directors{
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
     .board-directors__close-pop-up{
         position: fixed;
     }
