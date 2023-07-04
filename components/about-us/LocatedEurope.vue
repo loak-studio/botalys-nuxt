@@ -28,9 +28,13 @@
     padding-bottom: 120px;
 }
 .located-europe__title{
-    max-width: 840px;
+    max-width: 1048px;
     width: 100%;
     margin: 0 auto;
+    * {
+        max-width: 840px;
+        width: 100%;
+    }
     .text{
         margin-top: 1rem;
     }
