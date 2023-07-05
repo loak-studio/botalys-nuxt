@@ -40,26 +40,29 @@ navItems.forEach((item) => {
 })
 
 const toggleMenu = () => {
-  (document.querySelector('html') as HTMLElement).classList.toggle('no-scroll')
+  (document.querySelector('html') as HTMLHtmlElement).classList.toggle('no-scroll')
   displayMobileNavigation.value = !displayMobileNavigation.value
   window.scrollTo(0, 0)
 }
-const route = useRoute()
-watch(() => route.fullPath, () => {
 
-  (document.querySelector('html') as HTMLElement).classList.remove('no-scroll')
+const route = useRouter()
+route.beforeEach(() => {
+  document.querySelector('html')?.classList.remove('no-scroll')
   displayMobileNavigation.value = false
   Object.keys(displaySubnavigation.value).forEach(key => {
     displaySubnavigation.value[key] = false;
   });
 })
+
 </script>
 
 <template>
-  <div :class="'header ' + (isFrontpage ? 'header--transparent ' : '') + (displayMobileNavigation?'header--display-nav':'')">
+  <div
+    :class="'header ' + (isFrontpage ? 'header--transparent ' : '') + (displayMobileNavigation ? 'header--display-nav' : '')">
     <header class="header__container">
       <NuxtLink class="header__logo" to="/">
-        <Logo :color="isFrontpage ? displayMobileNavigation ? colors.darkJungleGreen : colors.halfSpanishWhite  : colors.darkJungleGreen" />
+        <Logo
+          :color="isFrontpage ? displayMobileNavigation ? colors.darkJungleGreen : colors.halfSpanishWhite : colors.darkJungleGreen" />
       </NuxtLink>
       <nav :class="'header__navigation ' + (displayMobileNavigation ? 'header__navigation--mobile-display' : '')">
         <ul class="header__list">
@@ -81,7 +84,7 @@ watch(() => route.fullPath, () => {
               </button>
               <ul
                 :class="'header__subnavigation ' + (displaySubnavigation[item.label] ? '' : 'header__subnavigation--hidden')">
-                <li v-for="(child,index) in item.childs" :key="index">
+                <li v-for="(child, index) in item.childs" :key="index">
                   <NuxtLink class="text header__subnavigation-item" :to="child.href">
                     {{ child.label }}</NuxtLink>
                 </li>
@@ -91,7 +94,8 @@ watch(() => route.fullPath, () => {
         </ul>
 
       </nav>
-      <botalys-button :class="'header__contact ' + (displayMobileNavigation ? '':'header__contact--hidden')" color="header" href="/contact-us/">Contact us</botalys-button>
+      <botalys-button :class="'header__contact ' + (displayMobileNavigation ? '' : 'header__contact--hidden')"
+        color="header" href="/contact-us/">Contact us</botalys-button>
       <button class="header__toggle-menu" @click="toggleMenu">{{
         displayMobileNavigation ? 'close' : 'menu' }}</button>
     </header>
@@ -192,22 +196,28 @@ watch(() => route.fullPath, () => {
 .header.header--transparent {
   border-bottom-color: var(--half-spanish-white);
   background-color: transparent;
-  .header__navigation > ul > li > .text{
+
+  .header__navigation>ul>li>.text {
     color: var(--half-spanish-white)
   }
-  .header__subnavigation-item{
+
+  .header__subnavigation-item {
     color: var(--dark-jungle-green);
-    &:hover{
+
+    &:hover {
       color: var(--half-spanish-white);
     }
   }
-  .router-link-active{
+
+  .router-link-active {
     border-color: var(--half-spanish-white);
   }
+
   &__link {
     color: var(--half-spanish-white)
   }
-  &__toggle-menu{
+
+  &__toggle-menu {
 
     border-left-color: var(--half-spanish-white);
   }
@@ -223,23 +233,29 @@ watch(() => route.fullPath, () => {
 
 @media (max-width: 1000px) {
   .header__navigation {
-    .header__subnavigation{
+    .header__subnavigation {
       pointer-events: none;
     }
   }
-  .header__navigation--mobile-display{
-    .header__subnavigation{
+
+  .header__navigation--mobile-display {
+    .header__subnavigation {
       pointer-events: all;
     }
   }
-  .header:not(.header--display-nav) .header__navigation, .header:not(.header--display-nav) .header__contact{
+
+  .header:not(.header--display-nav) .header__navigation,
+  .header:not(.header--display-nav) .header__contact {
     pointer-events: none;
   }
+
   .header {
     position: relative;
-    &.header--transparent nav.header__navigation > ul > li > .text{
+
+    &.header--transparent nav.header__navigation>ul>li>.text {
       color: var(--dark-jungle-green)
     }
+
     .header__list {
       .text {
         font-size: 1.5rem;
@@ -286,14 +302,14 @@ watch(() => route.fullPath, () => {
       padding: 0;
       gap: 1rem;
       opacity: 1;
-      
+
       &--hidden {
         display: flex;
         transform: none;
         pointer-events: all;
       }
     }
-    
+
 
     &__subnavigation-item {
       border-bottom: none;
@@ -319,7 +335,8 @@ watch(() => route.fullPath, () => {
       left: 36px;
       bottom: 44px;
       transition: opacity 300ms ease-in;
-      &--hidden{
+
+      &--hidden {
         opacity: 0;
       }
     }
@@ -337,25 +354,30 @@ watch(() => route.fullPath, () => {
       width: 74px;
     }
   }
-  .header--transparent{
-    .header__toggle-menu{
+
+  .header--transparent {
+    .header__toggle-menu {
       border-left-color: var(--half-spanish-white);
       color: var(--half-spanish-white)
     }
   }
-  .header--transparent.header--display-nav{
+
+  .header--transparent.header--display-nav {
     border-bottom-color: var(--dark-jungle-green);
     background-color: var(--half-spanish-white);
     transition: background 300ms ease-in-out;
-    nav .text{
+
+    nav .text {
       color: var(--dark-jungle-green);
-      &:hover{
+
+      &:hover {
         color: var(--dark-jungle-green);
       }
     }
-    .header__toggle-menu{
+
+    .header__toggle-menu {
       color: var(--dark-jungle-green);
-      border-left-color: var(--dark-jungle-green) ;
+      border-left-color: var(--dark-jungle-green);
     }
   }
 }
