@@ -110,7 +110,7 @@ onUnmounted(()=>{
 <template>
   <section class="hero">
     <div class="hero__background">
-      <video autoplay muted loop src="~/assets/jungle.mp4"></video>
+      <video loading="lazy" autoplay muted loop src="~/assets/jungle.mp4"></video>
       <figure>
         <img src="~/assets/images/river-2.jpeg" loading="lazy" alt="">
       </figure>
