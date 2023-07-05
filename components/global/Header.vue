@@ -283,7 +283,7 @@ route.beforeEach(() => {
       left: 0;
       top: calc(100% + 2px);
       width: 100%;
-      height: calc(100vh - 70px);
+      height: calc(100dvh - 70px);
       transition: opacity 300ms ease-in-out;
       opacity: 0;
       background: var(--half-spanish-white);
