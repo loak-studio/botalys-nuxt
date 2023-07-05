@@ -196,7 +196,7 @@ route.beforeEach(() => {
 .header.header--transparent {
   border-bottom-color: var(--half-spanish-white);
   background-color: transparent;
-
+  
   .header__navigation>ul>li>.text {
     color: var(--half-spanish-white)
   }
@@ -237,7 +237,7 @@ route.beforeEach(() => {
       pointer-events: none;
     }
   }
-
+  
   .header__navigation--mobile-display {
     .header__subnavigation {
       pointer-events: all;
@@ -358,7 +358,9 @@ route.beforeEach(() => {
       width: 74px;
     }
   }
-
+  .header__toggle-menu{
+    color: var(--dark-jungle-green)
+  }
   .header--transparent {
     .header__toggle-menu {
       border-left-color: var(--half-spanish-white);
