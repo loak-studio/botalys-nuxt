@@ -144,6 +144,13 @@ const currentPlant = ref(0)
     justify-content: center;
     opacity: .3;
     transition: opacity .3s ease-in-out;
+    
+}
+
+.types-products__list-item:not(.types-products__list-item--active){
+    &:hover{
+        opacity: .7;
+    }
 }
 
 .types-products__list-item--active {
