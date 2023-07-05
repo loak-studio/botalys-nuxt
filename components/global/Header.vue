@@ -257,6 +257,7 @@ route.beforeEach(() => {
     }
 
     .header__list {
+      overflow-y: scroll;
       .text {
         font-size: 1.5rem;
       }
@@ -277,11 +278,12 @@ route.beforeEach(() => {
 
     &__navigation {
       padding: 36px;
+      padding-bottom: 100px;
       position: absolute;
       left: 0;
       top: calc(100% + 2px);
       width: 100%;
-      height: calc(100vh);
+      height: calc(100vh - 70px);
       transition: opacity 300ms ease-in-out;
       opacity: 0;
       background: var(--half-spanish-white);
@@ -326,6 +328,8 @@ route.beforeEach(() => {
     }
 
     &__list {
+      height: 100%;
+      overflow-y: scroll;
       flex-direction: column;
       align-items: start;
     }
@@ -333,7 +337,7 @@ route.beforeEach(() => {
     &__contact {
       position: fixed;
       left: 36px;
-      bottom: 44px;
+      bottom: 1rem;
       transition: opacity 300ms ease-in;
 
       &--hidden {
