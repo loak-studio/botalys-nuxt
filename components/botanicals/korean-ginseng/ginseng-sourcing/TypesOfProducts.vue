@@ -211,6 +211,7 @@ const currentPlant = ref(0)
     display: flex;
     padding-top: 20px;
     transition: padding-top 300ms ease-in-out;
+    color: var(--dark-jungle-green)
 }
 
 .types-products__plant-paragraph-container {
