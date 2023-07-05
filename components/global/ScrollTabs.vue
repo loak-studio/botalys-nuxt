@@ -20,7 +20,6 @@ onMounted(() => {
         }
       }
     })
-      console.log(1/(items.length-1))
     items.forEach((item, index) => {
       if (index > 0) {
         tl.addLabel('panel-' + index)
