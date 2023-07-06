@@ -23,7 +23,6 @@ onMounted(()=>{
         start:'10% 70%',
         markers:false,
         onToggle:()=>{
-          console.log('ping')
           bar.classList.add('bar--visible')
         }
       }
