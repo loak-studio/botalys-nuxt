@@ -52,9 +52,9 @@ const items = [
 const swiperEl = ref()
 const swiperParams = {
     slidesPerView: 1.5,
-    centeredSlides:true,
-    loop:true,
-    spaceBetween:20,
+    centeredSlides: true,
+    loop: true,
+    spaceBetween: 20,
     breakpoints: {
         1000: {
             slidesPerView: 3
@@ -65,8 +65,11 @@ const swiperParams = {
 
 onMounted(() => {
     register();
-    Object.assign(swiperEl.value, swiperParams)
-    swiperEl.value.initialize()
+    if (swiperEl.value.initialize) {
+
+        Object.assign(swiperEl.value, swiperParams)
+        swiperEl.value.initialize()
+    }
 })
 
 const slideNext = () => {
@@ -235,9 +238,10 @@ const slidePrev = () => {
 }
 
 @media (max-width:809px) {
-    .ginseng-health__slider{
+    .ginseng-health__slider {
         margin-top: 0;
     }
+
     .ginseng-health {
         padding: 40px 0;
     }

@@ -13,7 +13,7 @@
     "nuxt": "^3.6.1"
   },
   "dependencies": {
-    "chart.js": "^4.3.0",
+    "countup.js": "^2.7.0",
     "gsap": "^3.11.5",
     "markdown-it": "^13.0.1",
     "sass": "^1.62.1",

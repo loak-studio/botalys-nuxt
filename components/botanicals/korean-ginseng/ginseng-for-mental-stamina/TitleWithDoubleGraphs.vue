@@ -18,7 +18,7 @@ const {last} = defineProps({last:Boolean})
                     </h4>
                     <slot name="graph-1" />
                 </div>
-                <div>
+                <div class="double-graph__graph-container">
                     <h4 class="h3 double-graph__subtitle">
                         <slot name="graph-2-title" />
                     </h4>
@@ -47,6 +47,13 @@ const {last} = defineProps({last:Boolean})
     border-right: 2px solid var(--nandor);
     margin: 0 auto;
     padding-bottom: 1px;
+}
+
+.double-graph__graph-container{
+    max-width: 480px;
+    svg{
+        width: 100%;
+    }
 }
 
 .double-graph__title-container {

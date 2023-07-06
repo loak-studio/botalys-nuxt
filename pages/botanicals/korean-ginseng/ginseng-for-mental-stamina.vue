@@ -1,6 +1,8 @@
 <script setup>
 import Brain from "~/assets/images/illustrations/brain.png"
 import River from "~/assets/images/river.jpg"
+import {gsap} from 'gsap'
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 const title = "Ginseng for mental stamina - Botalys"
 useSeoMeta({
   title: title,
@@ -10,6 +12,26 @@ useSeoMeta({
   twitterImage: 'https://botalys.com/share.png',
   twitterCard: 'summary_large_image',
 })
+
+onMounted(()=>{
+  gsap.registerPlugin(ScrollTrigger)
+  const bars = document.querySelectorAll('.bar')
+  bars.forEach(bar=>{
+    gsap.from(bar,{
+      scrollTrigger:{
+        trigger:bar,
+        start:'10% 70%',
+        markers:false,
+        onToggle:()=>{
+          console.log('ping')
+          bar.classList.add('bar--visible')
+        }
+      }
+    })
+  })
+
+})
+
 </script>
 
 <template>
@@ -61,13 +83,13 @@ useSeoMeta({
       Negative control
     </template>
     <template v-slot:graph-1>
-      <botanicals-korean-ginseng-ginseng-for-mental-stamina-charts-one-day-negative-control />
+      <botanicals-korean-ginseng-ginseng-for-mental-stamina-charts-five-days-negative-control />
     </template>
     <template v-slot:graph-2-title>
       BOTALYS red ginseng
     </template>
     <template v-slot:graph-2>
-      <botanicals-korean-ginseng-ginseng-for-mental-stamina-charts-one-day-botalys-red-ginseng />
+      <botanicals-korean-ginseng-ginseng-for-mental-stamina-charts-five-days-botalys-red-ginseng />
     </template>
     <template v-slot:details>
       The stress score is a self-assessed value based on a questionnaire called Perceived Stress Scoring (PSS). In the control group, a significant increase in stress levels is observed after 5 days of work, while in the supplemented group, study showed significant attenuation of accumulated stress after 5 days.
@@ -81,13 +103,13 @@ useSeoMeta({
       Negative control
     </template>
     <template v-slot:graph-1>
-      <botanicals-korean-ginseng-ginseng-for-mental-stamina-charts-one-day-negative-control />
+      <botanicals-korean-ginseng-ginseng-for-mental-stamina-charts-twelve-days-negative-control />
     </template>
     <template v-slot:graph-2-title>
       BOTALYS red ginseng
     </template>
     <template v-slot:graph-2>
-      <botanicals-korean-ginseng-ginseng-for-mental-stamina-charts-one-day-botalys-red-ginseng />
+      <botanicals-korean-ginseng-ginseng-for-mental-stamina-charts-twelve-days-botalys-red-ginseng />
     </template>
     <template v-slot:details>
       Mnesic performance was measured using a classic memory test. In the control, memory performance over 12 days showed signs of weakening, although the values were not significant. In the supplemented group, on the other hand, a significant increase in memory score was observed on day 12 of the test.

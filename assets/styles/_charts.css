@@ -1,0 +1,12 @@
+.bar{
+    transition: transform 800ms ease-in-out;
+    transform-origin: bottom;
+    transform-box:fill-box;
+    transform: scaleY(0);
+}
+.bar--visible{
+    transform: scaleY(1);
+}
+.bar--reverse{
+    transform-origin: top;
+}
