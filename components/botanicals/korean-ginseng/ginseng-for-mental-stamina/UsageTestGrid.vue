@@ -1,3 +1,23 @@
+
+<script setup>
+import { CountUp } from "countup.js"
+const grid = ref()
+onMounted(() => {
+    const numbers = document.querySelectorAll('.usage-grid__value-numbers')
+    numbers.forEach(num => {
+        const con = new CountUp(
+            num,
+            parseFloat(num.textContent),
+            {
+                duration: 5,
+                enableScrollSpy: true,
+                scrollSpyOnce: true,
+            }
+        );
+        con.start();
+    })
+})
+</script>
 <template>
     <div class="usage-grid__parent">
         <div class="usage-grid">
@@ -13,30 +33,30 @@
                 <span class="text bold">HOW DID CONSUMERS FEEL AFTER TAKING
                     BOTALYS RED GINSENG FOR 10 DAYS ?</span>
             </div>
-            <div class="usage-grid__grid">
+            <div ref="grid" class="usage-grid__grid">
                 <div class="usage-grid__grid-item">
-                    <span class="usage-grid__value">83%</span>
+                    <span class="usage-grid__value"><span class="usage-grid__value-numbers">83</span>%</span>
                     <div class="usage-grid__label">
                         <span class="usage-grid__verb text bold">Felt</span>
                         <span class="usage-grid__better h5">more dynamic</span>
                     </div>
                 </div>
                 <div class="usage-grid__grid-item">
-                    <span class="usage-grid__value">80%</span>
+                    <span class="usage-grid__value"><span class="usage-grid__value-numbers">80</span>%</span>
                     <div class="usage-grid__label">
                         <span class="usage-grid__verb text bold">Felt in a</span>
                         <span class="usage-grid__better h5">better mood</span>
                     </div>
                 </div>
                 <div class="usage-grid__grid-item">
-                    <span class="usage-grid__value">71%</span>
+                    <span class="usage-grid__value"><span class="usage-grid__value-numbers">71</span>%</span>
                     <div class="usage-grid__label">
                         <span class="usage-grid__verb text bold">ExPerienced</span>
                         <span class="usage-grid__better h5">better memory</span>
                     </div>
                 </div>
                 <div class="usage-grid__grid-item">
-                    <span class="usage-grid__value">70%</span>
+                    <span class="usage-grid__value"><span class="usage-grid__value-numbers">70</span>%</span>
                     <div class="usage-grid__label">
                         <span class="usage-grid__verb text bold">ExPerienced</span>
                         <span class="usage-grid__better h5">better sleep</span>
@@ -45,8 +65,10 @@
             </div>
             <div class="usage-grid__details">
                 <more-details>
-                The study was based on a self-assessment questionnaire and found that a large portion of consumers could feel BOTALYS red ginseng’s benefits on dynamism, mood stability, memory and even sleep quality after just 10 days, with the effects being incremental as the treatment was prolonged to 20 days.
-            </more-details>
+                    The study was based on a self-assessment questionnaire and found that a large portion of consumers could
+                    feel BOTALYS red ginseng’s benefits on dynamism, mood stability, memory and even sleep quality after
+                    just 10 days, with the effects being incremental as the treatment was prolonged to 20 days.
+                </more-details>
             </div>
         </div>
     </div>
@@ -80,33 +102,37 @@
     }
 }
 
-.usage-grid__lined-text{
+.usage-grid__lined-text {
     display: flex;
     align-items: center;
-    gap:1rem;
+    gap: 1rem;
     padding-top: 3rem;
     padding-bottom: 3rem;
     max-width: 1048px;
     margin: 0 auto;
-    .text{
+
+    .text {
         max-width: 325px;
     }
-    &::before{
-        content:'';
+
+    &::before {
+        content: '';
         height: 2px;
         background: var(--dark-jungle-green);
         flex-grow: 1;
         min-width: 1rem;
     }
-    &::after{
+
+    &::after {
         min-width: 1rem;
-        content:'';
+        content: '';
         height: 2px;
         background: var(--dark-jungle-green);
         flex-grow: 1;
     }
 }
-.usage-grid__grid{
+
+.usage-grid__grid {
     display: grid;
     grid-template-columns: 50% 50%;
     max-width: 546px;
@@ -115,66 +141,81 @@
     margin-bottom: 3rem;
     position: relative;
 }
-.usage-grid__grid-item{
+
+.usage-grid__grid-item {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-.usage-grid__better{
+
+.usage-grid__better {
     text-transform: uppercase;
 }
-.usage-grid__grid-item:nth-child(1)::after{
+
+.usage-grid__grid-item:nth-child(1)::after {
     position: absolute;
     height: 100%;
-    content:'';
+    content: '';
     background: var(--dark-jungle-green);
     width: 2px;
     left: calc(50% + 40px);
 }
-.usage-grid__grid-item:nth-child(3),.usage-grid__grid-item:nth-child(4){
+
+.usage-grid__grid-item:nth-child(3),
+.usage-grid__grid-item:nth-child(4) {
     flex-direction: column-reverse;
     position: relative;
-    &::before{
+
+    &::before {
         height: 2px;
         width: 100%;
         background: var(--dark-jungle-green);
-        content:'';
-        top:-40px;
+        content: '';
+        top: -40px;
         position: absolute;
     }
 }
-.usage-grid__label{
+
+.usage-grid__label {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-.usage-grid__value{
+
+.usage-grid__value {
     font-family: 'bodoni-pt-variable';
     font-size: 136px;
 }
+
 @media (max-width: 1100px) {
-    .usage-grid__introduction{
+    .usage-grid__introduction {
         padding: 0 1rem;
     }
-    .usage-grid__details{
+
+    .usage-grid__details {
         padding: 0 1rem;
     }
 }
+
 @media (max-width:809px) {
-    .usage-grid__grid{
+    .usage-grid__grid {
         max-width: none;
         column-gap: 0;
         row-gap: 2rem;
     }
-    .usage-grid__grid-item:nth-child(3)::before, .usage-grid__grid-item:nth-child(4)::before{
-        top:-1rem;
+
+    .usage-grid__grid-item:nth-child(3)::before,
+    .usage-grid__grid-item:nth-child(4)::before {
+        top: -1rem;
     }
-    .usage-grid__grid-item:nth-child(1)::after{
+
+    .usage-grid__grid-item:nth-child(1)::after {
         left: 50%;
     }
-    .usage-grid__value{
+
+    .usage-grid__value {
         font-size: 3rem;
-        
+
     }
 }
 </style>
