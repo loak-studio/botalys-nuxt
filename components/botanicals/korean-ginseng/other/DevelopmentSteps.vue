@@ -36,9 +36,10 @@ onMounted(() => {
         tl = gsap.timeline({
             scrollTrigger: {
                 trigger: ".development-steps",
-                start: "10% 50%",
-                end: "90% 50%",
+                start: "top 50%",
+                end: "75% 50%",
                 scrub: true,
+                // markers:true
             }
         })
         steps.forEach((step, index) => {
