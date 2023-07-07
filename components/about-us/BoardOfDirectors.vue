@@ -107,8 +107,22 @@ const removePopup = () => {
                         </figcaption>
                     </div>
                     <div class="board-directors__pop-up-content">
-                        <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In enim felis, luctus eget turpis ac, tincidunt vulputate felis. Vivamus suscipit dolor id nunc pretium facilisis. Quisque dictum tellus erat, quis sollicitudin justo feugiat sed. Mauris blandit lobortis elit vitae luctus. Proin scelerisque eros a pretium congue. Curabitur tempor est ut lorem placerat, eget fringilla urna vulputate. Aliquam erat volutpat. Praesent eleifend efficitur facilisis. Aliquam porttitor aliquam nunc at consequat. Duis nulla lacus, lacinia sed nulla et, aliquam aliquam risus. Vivamus quis scelerisque mauris. Aliquam vel efficitur nulla. Maecenas aliquet odio id orci vulputate placerat. Maecenas eget tempor velit. Sed orci tellus, euismod ac quam eu, porttitor auctor felis. Etiam cursus accumsan lectus sed laoreet. </p>
-                        <p class="text">Cras eget turpis ligula. Aenean posuere tincidunt facilisis. Aenean eleifend feugiat lacus, in iaculis mi vestibulum ut. Pellentesque vel eleifend urna. Integer ut porta nibh, et cursus metus. Pellentesque et varius turpis, at feugiat ipsum. Phasellus tempus fermentum orci nec luctus. Suspendisse lacinia sodales ultrices. Suspendisse potenti. Phasellus sed ipsum bibendum, mattis ex ut, congue nisl. Sed auctor vestibulum lacus nec suscipit. Phasellus vel tristique ex. Sed congue nibh lorem, a auctor turpis rutrum quis. Ut id urna ultrices, commodo ligula in, porttitor felis. Phasellus non odio laoreet, dictum mi ac, ullamcorper ante. </p>
+                        <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In enim felis, luctus eget
+                            turpis ac, tincidunt vulputate felis. Vivamus suscipit dolor id nunc pretium facilisis. Quisque
+                            dictum tellus erat, quis sollicitudin justo feugiat sed. Mauris blandit lobortis elit vitae
+                            luctus. Proin scelerisque eros a pretium congue. Curabitur tempor est ut lorem placerat, eget
+                            fringilla urna vulputate. Aliquam erat volutpat. Praesent eleifend efficitur facilisis. Aliquam
+                            porttitor aliquam nunc at consequat. Duis nulla lacus, lacinia sed nulla et, aliquam aliquam
+                            risus. Vivamus quis scelerisque mauris. Aliquam vel efficitur nulla. Maecenas aliquet odio id
+                            orci vulputate placerat. Maecenas eget tempor velit. Sed orci tellus, euismod ac quam eu,
+                            porttitor auctor felis. Etiam cursus accumsan lectus sed laoreet. </p>
+                        <p class="text">Cras eget turpis ligula. Aenean posuere tincidunt facilisis. Aenean eleifend feugiat
+                            lacus, in iaculis mi vestibulum ut. Pellentesque vel eleifend urna. Integer ut porta nibh, et
+                            cursus metus. Pellentesque et varius turpis, at feugiat ipsum. Phasellus tempus fermentum orci
+                            nec luctus. Suspendisse lacinia sodales ultrices. Suspendisse potenti. Phasellus sed ipsum
+                            bibendum, mattis ex ut, congue nisl. Sed auctor vestibulum lacus nec suscipit. Phasellus vel
+                            tristique ex. Sed congue nibh lorem, a auctor turpis rutrum quis. Ut id urna ultrices, commodo
+                            ligula in, porttitor felis. Phasellus non odio laoreet, dictum mi ac, ullamcorper ante. </p>
                         <p class="text"></p>
                         <p class="text"></p>
                         <p class="text"></p>
@@ -189,15 +203,17 @@ const removePopup = () => {
     align-items: flex-start;
     color: var(--dark-jungle-green)
 }
-.board-directors__pop-up-content{
+
+.board-directors__pop-up-content {
     color: var(--half-spanish-white);
     max-height: 500px;
-    overflow-x: scroll;
+    overflow-x: hidden;
+    overflow-y: scroll;
     width: 100%;
     max-width: 450px;
     display: flex;
     flex-direction: column;
-    gap:1rem;
+    gap: 1rem;
     padding: 1rem;
     padding-right: 0;
 }
@@ -213,6 +229,7 @@ const removePopup = () => {
     align-items: center;
     z-index: 20;
     padding: 1rem;
+
     &::before {
         height: 100%;
         width: 100%;
@@ -268,19 +285,21 @@ const removePopup = () => {
 }
 
 @media (max-width: 900px) {
-    .board-directors__title{
+    .board-directors__title {
         padding: 0 1rem;
     }
 }
 
 @media (max-width:809px) {
-    .board-directors{
+    .board-directors {
         padding-top: 40px;
         padding-bottom: 40px;
     }
-    .board-directors__close-pop-up{
+
+    .board-directors__close-pop-up {
         position: fixed;
     }
+
     .board-directors__list {
         gap: 1rem;
     }
@@ -300,19 +319,20 @@ const removePopup = () => {
     .board-directors__pop-up-container {
         padding: 0;
     }
-    .board-directors__pop-up-picture{
+
+    .board-directors__pop-up-picture {
         width: 150px;
         height: 150px;
         flex-shrink: 0;
     }
-    .board-directors__pop-up-content{
+
+    .board-directors__pop-up-content {
         max-height: none;
         overflow-x: hidden;
         overflow-y: scroll;
         padding: 0;
         max-width: none;
-
-    padding-right: 0;
+        padding-right: 0;
     }
 }
 
