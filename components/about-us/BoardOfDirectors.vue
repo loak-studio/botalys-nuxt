@@ -234,7 +234,6 @@ const removePopup = () => {
     position: relative;
     display: flex;
     gap: 24px;
-    overflow-x: scroll;
     padding-right: 4rem;
 }
 
@@ -308,7 +307,8 @@ const removePopup = () => {
     }
     .board-directors__pop-up-content{
         max-height: none;
-        overflow-x: visible;
+        overflow-x: hidden;
+        overflow-y: scroll;
         padding: 0;
         max-width: none;
 
