@@ -1,3 +1,90 @@
+<script setup>
+import { gsap } from 'gsap';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
+onMounted(() => {
+    gsap.registerPlugin(ScrollTrigger)
+    console.log('hi')
+    gsap.matchMedia().add('(min-width:1000px)', () => {
+        const timeline = gsap.timeline({
+            scrollTrigger: {
+                trigger: '.located-europe__numbers',
+                start: '60% 90%',
+            },
+        })
+
+        timeline.from('[data-number="botanical-explorers"]', {
+            opacity: 0,
+            duration:.2
+        })
+        timeline.from('[data-number="botanical-explorers"] .located-europe__dash', {
+            height: 0,
+            duration:.2
+        })
+        timeline.from('[data-number="botanical-explorers"] .located-europe__dash', {
+            width: 0,
+            duration:.2
+        })
+        timeline.from('[data-number="botanical-explorers"] .located-europe__dot', {
+            opacity: 0,
+            duration:.2
+        })
+
+
+
+        timeline.from('[data-number="sqm"]', {
+            opacity: 0,
+            duration:.2
+        })
+        timeline.from('[data-number="sqm"] .located-europe__dash', {
+            width: 0,
+            duration:.2
+        })
+        timeline.from('[data-number="sqm"] .located-europe__dash', {
+            height: 0,
+            duration:.2
+        })
+        timeline.from('[data-number="sqm"] .located-europe__dot', {
+            opacity: 0,
+            duration:.2
+        })
+
+
+
+        timeline.from('[data-number="years"]', {
+            opacity: 0,
+            duration:.2
+        })
+        timeline.from('[data-number="years"] .located-europe__dash', {
+            width: 0,
+            duration:.2
+        })
+        timeline.from('[data-number="years"] .located-europe__dash', {
+            height: 0,
+            duration:.2
+        })
+        timeline.from('[data-number="years"] .located-europe__dot', {
+            opacity: 0,
+            duration:.2
+        })
+
+
+
+        timeline.from('[data-number="tons"]', {
+            opacity: 0,
+            duration:.2
+        })
+        timeline.from('[data-number="tons"] .located-europe__dash', {
+            height: 0,
+            duration:.2
+        })
+        timeline.from('[data-number="tons"] .located-europe__dot', {
+            opacity: 0,
+            duration:.2
+        })
+    })
+})
+</script>
+
 <template>
     <div class="located-europe__parent">
         <section class="located-europe">
@@ -16,20 +103,28 @@
                     <img src="~/assets/images/batiment.png" alt="">
                 </figure>
                 <div data-number="botanical-explorers" class="located-europe__number-item">
+                    <div class="located-europe__dash" />
+                    <div class="located-europe__dot" />
                     <span class="botanical-explorers__number-outline">30</span>
                     <span class="h6">Botanical explorers</span>
                 </div>
                 <div data-number="sqm" class="located-europe__number-item">
+                    <div class="located-europe__dash" />
+                    <div class="located-europe__dot" />
                     <span class="botanical-explorers__number-outline">2000</span>
                     <span class="h6">SQM Vertical farm</span>
                 </div>
                 <div data-number="years" class="located-europe__number-item">
+                    <div class="located-europe__dash" />
+                    <div class="located-europe__dot" />
                     <span class="botanical-explorers__number-outline">+12</span>
-                    <span class="h6">Years of r&d and<br/> botanical expertise</span>
+                    <span class="h6">Years of r&d and<br /> botanical expertise</span>
                 </div>
                 <div data-number="tons" class="located-europe__number-item">
+                    <div class="located-europe__dash" />
+                    <div class="located-europe__dot" />
                     <span class="botanical-explorers__number-outline">60</span>
-                    <span class="h6">Tons of fresh<br/> botanicals / year</span>
+                    <span class="h6">Tons of fresh<br /> botanicals / year</span>
                 </div>
             </div>
         </section>
@@ -94,20 +189,23 @@
     display: flex;
     flex-direction: column;
     position: absolute;
-    .h6{
+
+    .h6 {
         text-transform: uppercase;
     }
-    &::before{
+
+    .located-europe__dash {
 
         display: block;
         border-color: var(--nandor);
         border-style: dashed;
         border-width: 0;
-        content:'';
+        content: '';
         position: absolute;
     }
-    &::after{
-        content:'';
+
+    .located-europe__dot {
+        content: '';
         position: absolute;
         background: var(--mikado-yellow);
         border: 2px solid var(--nandor);
@@ -118,15 +216,17 @@
 [data-number="botanical-explorers"] {
     left: 0;
     top: 50px;
-    &::before{
+
+    .located-europe__dash {
         height: 104px;
         width: 327px;
-        top:calc(100% + 11px);
+        top: calc(100% + 11px);
         left: 40px;
         border-left-width: 2px;
         border-bottom-width: 2px;
     }
-    &::after{
+
+    .located-europe__dot {
         top: calc(95px + 100% + 10px);
         left: calc(40px + 327px);
         width: 16px;
@@ -137,15 +237,17 @@
 [data-number="sqm"] {
     right: 0;
     top: 0;
-    &::before{
+
+    .located-europe__dash {
         height: 162px;
         width: 112px;
-        top:60px;
+        top: 60px;
         right: calc(100% + 22px);
         border-left-width: 2px;
         border-top-width: 2px;
     }
-    &::after{
+
+    .located-europe__dot {
         top: calc(162px + 60px);
         right: calc(112px + 100% + 22px - 10px);
         width: 16px;
@@ -157,15 +259,16 @@
     bottom: 0;
     left: 50px;
 
-    &::before{
+    .located-europe__dash {
         height: 240px;
         width: 150px;
-        bottom:105px;
+        bottom: 105px;
         left: 100%;
         border-right-width: 2px;
         border-bottom-width: 2px;
     }
-    &::after{
+
+    .located-europe__dot {
         bottom: calc(105px + 240px);
         left: calc(100% + 150px - 10px);
         width: 16px;
@@ -176,17 +279,19 @@
 [data-number="tons"] {
     right: 140px;
     bottom: -50px;
-    &::before{
+
+    .located-europe__dash {
         height: 162px;
         width: 0px;
-        bottom:100%;
+        bottom: 100%;
         left: 50px;
         border-right-width: 2px;
         border-bottom-width: 2px;
     }
-    &::after{
+
+    .located-europe__dot {
         bottom: calc(100% + 162px);
-        left: calc(50px - 10px);
+        left: calc(53px - 10px);
         width: 16px;
         height: 16px;
     }
@@ -208,19 +313,22 @@
 }
 
 @media (max-width: 1000px) {
-    .located-europe__number-item{
+    .located-europe__number-item {
         position: static;
-        &::after{
+
+        .located-europe__dash{
             display: none;
         }
-        &::before{
+
+        .located-europe__dot {
             display: none;
         }
     }
-    .located-europe__numbers{
+
+    .located-europe__numbers {
         flex-direction: column;
         align-items: flex-start;
-        gap:1rem;
+        gap: 1rem;
         padding: 0;
     }
 }
@@ -233,4 +341,5 @@
     .located-europe__draw {
         margin-top: 2rem;
     }
-}</style>
+}
+</style>
