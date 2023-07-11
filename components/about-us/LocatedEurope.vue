@@ -1,11 +1,11 @@
 <script setup>
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
+let timeline
 onMounted(() => {
     gsap.registerPlugin(ScrollTrigger)
-    console.log('hi')
     gsap.matchMedia().add('(min-width:1000px)', () => {
-        const timeline = gsap.timeline({
+        timeline = gsap.timeline({
             scrollTrigger: {
                 trigger: '.located-europe__numbers',
                 start: '60% 90%',
@@ -82,6 +82,10 @@ onMounted(() => {
             duration:.2
         })
     })
+})
+
+onUnmounted(()=>{
+    timeline.kill()
 })
 </script>
 
