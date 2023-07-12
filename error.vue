@@ -29,7 +29,7 @@ useHead({
     <div class="error-page">
         <div class="error-page__container" >
             <figure class="error-page__background">
-                <nuxt-picture loading="lazy" sizes="xs:320px sm:640px lg:1920px" width="1920" height="1080" src="/images/404.png" alt=""/>
+                <nuxt-picture sizes="xs:320px sm:640px lg:1920px" width="1920" height="1080" src="/images/404.png" alt=""/>
             </figure>
             <Header :is-frontpage="true" />
             <div  class="error__parent">
