@@ -1,9 +1,4 @@
 <script setup>
-import Slice1 from "~/assets/images/standards/slice-1.png"
-import Slice2 from "~/assets/images/standards/slice-2.png"
-import Slice3 from "~/assets/images/standards/slice-3.png"
-import Slice4 from "~/assets/images/standards/slice-4.png"
-
 const title = "Our standards - Botalys"
 useSeoMeta({
     title: title,
@@ -60,7 +55,7 @@ useSeoMeta({
         },
 
         {
-            image: Slice1,
+            image: '/images/standards/slice-1.png',
             title: 'Absolute purity',
             description: [`We, at BOTALYS, have a zero-tolerance policy when it comes to contaminants. Whether it is pesticides, heavy metals or ethylene oxide, any contamination at all – even in trace amounts – carries a risk for health and is therefore inadmissible. BOTALYS’ ingredients however, are entirely safe and free from any contaminants whatsoever. `],
             tabs: [
@@ -81,7 +76,7 @@ useSeoMeta({
         },
 
         {
-            image: Slice2,
+            image: '/images/standards/slice-2.png',
             title: 'Complete standardization',
             description: [` Like any natural raw material, plants have a high degree of molecular variability, which makes it difficult to ensure consistent clinical potency. In response to this, the industry has come up with extract standardization. However, only a minimal fraction of the plants’ molecular spectrum is standardized; the rest of it remains highly variable. A medicinal plant is a complex synergistic bioactive cocktail and at BOTALYS, we believe molecular precision and standardization are the key delivering potent and consistent health benefits. `],
             tabs: [
@@ -103,7 +98,7 @@ useSeoMeta({
 
         {
 
-            image: Slice3,
+            image: '/images/standards/slice-3.png',
             title: 'Wilderness preservation',
             description: [` Most premium ingredient suppliers claim to have a sustainable sourcing and pride themselves on respecting the environment, yet most medicinal plants come directly from wild harvesting or intensive crop monoculture. `,
                 `Even when organic or responsible, both intensive agriculture and wild plant collection approaches share a massive environmental drawback: they damage biodiversity. BOTALYS’ approach allows us to just let those wild biotopes be, which is the best way we know to protect them. `],
@@ -125,7 +120,7 @@ useSeoMeta({
         },
 
         {
-            image: Slice4,
+            image: '/images/standards/slice-4.png',
             title: 'Resilient supply chain',
             description: [`In the current context of increasing demand, climate change and geopolitical instability, the supply chain of qualitative medicinal plants has been shaken to its core and the supply and use of botanical ingredients is becoming increasingly dicey. BOTALYS’ unique approach allows us to provide our customers with a resilient supply chain with minimal risks and consistent batch-to-batch quality. `],
             tabs: [

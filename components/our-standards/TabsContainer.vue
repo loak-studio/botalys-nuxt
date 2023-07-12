@@ -9,7 +9,7 @@ const {items}= defineProps({items:Array})
             <hr class="tabs-container__line-2">
             <div class="tabs-container__item" v-for="(item,index) in items" :key="index">
                 <figure v-if="item.image" class="tabs-container__figure">
-                    <img :src="item.image" alt="">
+                    <nuxt-picture sizes="xs:320px sm:640px" width="1440" height="235" :src="item.image" alt=""/>
                 </figure>
                 <div class="tabs-container__content">
 
