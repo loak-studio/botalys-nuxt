@@ -13,7 +13,7 @@ useSeoMeta({
     <hero-with-illustration :links="[{
         href: '#',
         label: 'Other botanicals'
-    },]" image="/images/river.jpg" title="Other botanicals" :paragraphs="[
+    },]" image="/images/illustrations/plant.png" title="Other botanicals" :paragraphs="[
     'The R&D department at BOTALYS is currently working on the development of several other rare medicinal plants for commercialization.'
 ]" />
     <BotanicalsKoreanGinsengOtherBlackCard/>
