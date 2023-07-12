@@ -68,7 +68,7 @@ const removePopup = () => {
                 <li class="board-directors__member" v-for="(member, index) in members" :key="index">
                     <button @click="showPopup(member)" class="board-directors__button">
                         <figure class="board-directors__picture">
-                            <nuxt-picture width="219" height="258" :src="member.picture" alt="" />
+                            <nuxt-picture sizes="sm:219" width="219" height="258" :src="member.picture" alt="" />
                         </figure>
                         <figcaption class="board-directors__caption">
                             <span class="h6">{{ member.name }}</span>
