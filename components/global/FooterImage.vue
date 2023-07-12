@@ -1,6 +1,6 @@
 <template>
   <figure class="footer-image">
-    <nuxt-picture width="570" height="265" src="/images/footer-jungle.png" alt=""/>
+    <nuxt-picture loading="lazy" width="570" height="265" src="/images/footer-jungle.png" alt=""/>
   </figure>
 </template>
 

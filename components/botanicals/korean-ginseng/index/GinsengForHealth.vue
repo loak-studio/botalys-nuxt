@@ -105,7 +105,7 @@ const slidePrev = () => {
                 <swiper-container class="ginseng-health__slider" ref="swiperEl" init="false">
                     <swiper-slide class="ginseng-health__slide" v-for="(item, index) in items" :key="index">
                         <figure class="ginseng-health__figure">
-                            <nuxt-picture :src="item.image" alt=""/>
+                            <nuxt-picture loading="lazy" :src="item.image" alt=""/>
                         </figure>
                         <BotalysButton color="yellow" :href="item.href">{{ item.label }}</BotalysButton>
                     </swiper-slide>

@@ -18,7 +18,7 @@ const { title, paragraphs, image, breadcrumbLinks } = defineProps({ title: Strin
                         v-html="paragraph"></p>
                 </div>
                 <figure class="hero-photo__figure">
-                    <nuxt-picture sizes="sm:300px lg:500px" width="559" height="838" :src="image"/>
+                    <nuxt-picture loading="lazy" sizes="sm:300px lg:500px" width="559" height="838" :src="image"/>
                 </figure>
             </div>
         </section>

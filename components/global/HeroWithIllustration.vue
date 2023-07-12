@@ -7,7 +7,7 @@ const { links, image, title, paragraphs } = defineProps({ links: Array, image:St
             <breadcrumb :links="links" />
             <div class="hero-illustration__content">
                 <figure class="hero-illustration__figure">
-                <nuxt-picture :src="image" alt=""/>
+                <nuxt-picture loading="lazy" :src="image" alt=""/>
             </figure>
             <div class="hero-illustration__text">
                 <h1 class="h1 hero-illustration__title">{{ title }}</h1>

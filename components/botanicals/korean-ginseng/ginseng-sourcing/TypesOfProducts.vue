@@ -69,7 +69,7 @@ const currentPlant = ref(0)
                             currentPlant = index
                         }" class="types-products__button">
                             <figure class="types-products__figure">
-                                <nuxt-picture :src="plant.image" alt=""/>
+                                <nuxt-picture loading="lazy" :src="plant.image" alt=""/>
                             </figure>
 
                             <div @click.stop class="types-products__plant-paragraph-container">

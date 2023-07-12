@@ -23,7 +23,7 @@ useSeoMeta({
       ]"/>
       <div class="contact__container">
         <figure class="contact__image">
-          <nuxt-picture src="/images/river.jpg" alt=""/>
+          <nuxt-picture loading="lazy" src="/images/river.jpg" alt=""/>
         </figure>
         <div class="contact__contact-form">
           <div class="contact__title-container">

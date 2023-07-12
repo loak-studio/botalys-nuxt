@@ -36,7 +36,7 @@ onUnmounted(()=>{
             <hr class="text-image__line-1">
             <hr class="text-image__line-2">
             <figure ref="figure" class="text-image__figure">
-                <nuxt-picture  sizes="xs:320px sm:640px" width="618" height="731" :src="imageSrc" alt=""/>
+                <nuxt-picture loading="lazy"  sizes="xs:320px sm:640px" width="618" height="731" :src="imageSrc" alt=""/>
             </figure>
             <div class="text-image__content">
                 <div ref="parent" class="text-image__slot">

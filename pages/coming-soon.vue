@@ -29,7 +29,7 @@ useHead({
     <div class="coming-soon-page">
         <div class="coming-soon-page__container" >
             <figure class="coming-soon-page__background">
-                <nuxt-picture src="/images/korean-ginseng-moutain.jpeg" alt=""/>
+                <nuxt-picture loading="lazy" src="/images/korean-ginseng-moutain.jpeg" alt=""/>
             </figure>
             <Header :is-frontpage="true" />
             <div  class="coming-soon__parent">
