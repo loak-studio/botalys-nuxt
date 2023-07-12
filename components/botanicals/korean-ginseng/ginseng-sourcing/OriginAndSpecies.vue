@@ -2,7 +2,7 @@
     <div class="origin-species__parent">
         <section class="origin-species">
             <figure class="origin-species__panax">
-                <img src="~/assets/images/illustrations/plants/panax.png" alt="">
+                <nuxt-picture width="388" height="736" src="/images/illustrations/plants/panax.png" alt=""/>
             </figure>
             <div class="origin-species__text-container">
                 <div>
@@ -16,7 +16,7 @@
                 <p class="text">Ginseng adulteration is indeed quite common on the market of herbal products; a recent study estimated that no less than 24% of 507 ginseng-containing products sold across 12 countries were either mislabeled of adulterated, failing botanical and / or chemical identification tests (Ichim et al., 2020).</p>
             </div>
             <figure class="origin-species__false-ginseng">
-                <img src="~/assets/images/schemas/false-ginseng.svg" alt="">
+                <nuxt-picture width="944" height="529" src="/images/schemas/false-ginseng.svg" alt=""/>
             </figure>
             <div class="origin-species__caption">
                 <p class="text">

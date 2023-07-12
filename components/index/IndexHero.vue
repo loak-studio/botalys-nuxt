@@ -112,7 +112,7 @@ onUnmounted(()=>{
     <div class="hero__background">
       <video loading="lazy" autoplay muted loop src="~/assets/jungle.mp4"></video>
       <figure>
-        <img src="~/assets/images/river-2.jpeg" loading="lazy" alt="">
+        <nuxt-picture src="/images/river-2.jpeg" loading="lazy" alt=""/>
       </figure>
     </div>
     <Header class="hero__header" :isFrontpage="true" />

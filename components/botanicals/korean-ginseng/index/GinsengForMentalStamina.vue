@@ -52,7 +52,7 @@ const statsItems = [
                 </div>
             </div>
             <figure class="mental-stamina__brain">
-                <img src="~/assets/images/illustrations/brain.svg" alt="">
+                <nuxt-picture src="/images/illustrations/brain.svg" alt=""/>
             </figure>
             <div class="mental-stamina__button-container">
                 <BotalysButton color="yellow" href="/botanicals/korean-ginseng/ginseng-for-mental-stamina/">Dive into our proprietary data</BotalysButton>

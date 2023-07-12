@@ -1,5 +1,4 @@
 <script setup>
-import BackgroundImage from "~/assets/images/korean-ginseng-moutain.jpeg"
 definePageMeta({ layout: false })
 const title = "Coming soon - Botalys"
 useSeoMeta({
@@ -30,7 +29,7 @@ useHead({
     <div class="coming-soon-page">
         <div class="coming-soon-page__container" >
             <figure class="coming-soon-page__background">
-                <img :src="BackgroundImage" alt="">
+                <nuxt-picture src="/images/korean-ginseng-moutain.jpeg" alt=""/>
             </figure>
             <Header :is-frontpage="true" />
             <div  class="coming-soon__parent">

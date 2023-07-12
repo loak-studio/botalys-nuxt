@@ -1,47 +1,44 @@
 <script setup>
-import Moutain from "~/assets/images/mountain_dark_sky.jpg"
-import LeafDrop from "~/assets/images/leaf_drop.jpeg"
 import Slice1 from "~/assets/images/standards/slice-1.png"
 import Slice2 from "~/assets/images/standards/slice-2.png"
 import Slice3 from "~/assets/images/standards/slice-3.png"
 import Slice4 from "~/assets/images/standards/slice-4.png"
-import River from "~/assets/images/river.jpg"
 
 const title = "Our standards - Botalys"
 useSeoMeta({
-  title: title,
-  ogTitle: title,
-  twitterTitle: title,
-  ogImage: 'https://botalys.com/share.png',
-  twitterImage: 'https://botalys.com/share.png',
-  twitterCard: 'summary_large_image',
+    title: title,
+    ogTitle: title,
+    twitterTitle: title,
+    ogImage: 'https://botalys.com/share.png',
+    twitterImage: 'https://botalys.com/share.png',
+    twitterCard: 'summary_large_image',
 })
 </script>
 
 <template>
-    <hero-with-photo
-    :breadcrumb-links="[
-        {label:'Our Standards',href:'#'}
-    ]"
-    :image="Moutain" title="Our standards"
+    <hero-with-photo :breadcrumb-links="[
+        { label: 'Our Standards', href: '#' }
+    ]" image="/images/mountain_dark_sky.jpg" title="Our standards"
         :paragraphs="[
             `BOTALYS ambitions to set higher standards in botanicals sourcing for brands that will not settle for anything less than excellence.`]" />
-   
 
-    <text-image :imageSrc="River">
+
+    <text-image imageSrc="/images/river.jpg">
         <div>
             <Tag color="yellow">Biomimetic Indoor Farming</Tag>
             <h3 class="h3">We raise the bar for botanicals sourcing</h3>
         </div>
-      <div>
-        <p class="text light">Thanks to its innovative proprietary technology, BOTALYS is able to produce the most pristine
-            quality botanicals in the world.</p>
-        <p class="text light">From absolute purity to complete standardization, BOTALYS has taken up the bold challenge of ticking
-            all the boxes of an ideal botanicals supply. So that our clients no longer have to choose between quality,
-            effectiveness and sustainability.</p>
-      </div>
+        <div>
+            <p class="text light">Thanks to its innovative proprietary technology, BOTALYS is able to produce the most
+                pristine
+                quality botanicals in the world.</p>
+            <p class="text light">From absolute purity to complete standardization, BOTALYS has taken up the bold challenge
+                of ticking
+                all the boxes of an ideal botanicals supply. So that our clients no longer have to choose between quality,
+                effectiveness and sustainability.</p>
+        </div>
         <botalys-button href="/our-approach/" color="outline">Discover Our Approach</botalys-button>
-</text-image>
+    </text-image>
 
     <our-standards-tabs-container :items="[
         {
@@ -148,16 +145,19 @@ useSeoMeta({
             ]
         }
     ]" />
-    
-    <text-image :image-src="LeafDrop">
+
+    <text-image image-src="/images/leaf_drop.jpeg">
         <div>
             <Tag color="yellow">Get in touch</Tag>
             <h3 class="h3">Let's go further together</h3>
         </div>
         <div>
-            <p class="text light">Do you have a project in mind for which you wish to unlock the full potential of rare medicinal plants ? Are you interested in exploring the innovation opportunities offered by Biomimetic Indoor Farming? Or maybe you want to learn more about how phytonutrients and emerging trends can synergize into unique new Nutraceutical formulas? Whatever your needs are, we would love to hear from you and help you achieve your vision. Take the first step and reach out to us.</p>
+            <p class="text light">Do you have a project in mind for which you wish to unlock the full potential of rare
+                medicinal plants ? Are you interested in exploring the innovation opportunities offered by Biomimetic Indoor
+                Farming? Or maybe you want to learn more about how phytonutrients and emerging trends can synergize into
+                unique new Nutraceutical formulas? Whatever your needs are, we would love to hear from you and help you
+                achieve your vision. Take the first step and reach out to us.</p>
 
         </div>
-        <botalys-button href="#" color="outline">Contact us</botalys-button>
-    </text-image>
-    </template>
+    <botalys-button href="#" color="outline">Contact us</botalys-button>
+</text-image></template>

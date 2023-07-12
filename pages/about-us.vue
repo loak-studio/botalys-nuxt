@@ -1,6 +1,4 @@
 <script setup>
-import Mountain from "~/assets/images/korean-ginseng-moutain.jpeg"
-import River from "~/assets/images/river.jpg"
 const title = "About us - Botalys"
 useSeoMeta({
   title: title,
@@ -13,7 +11,7 @@ useSeoMeta({
 </script>
 
 <template>
-  <hero-with-photo :image="Mountain" title="About us" :breadcrumb-links="[
+  <hero-with-photo image="/images/korean-ginseng-moutain.jpeg" title="About us" :breadcrumb-links="[
     {
       label: 'About Us',
       href: '#'
@@ -25,7 +23,7 @@ useSeoMeta({
   <about-us-board-of-directors />
   <about-us-a-botanical-odyssey />
   <about-us-located-europe />
-  <text-image :imageSrc="River">
+  <text-image imageSrc="/images/river.jpg">
     <div>
       <Tag color="yellow">Get in touch</Tag>
       <h3 class="h3">Let's go further together</h3>

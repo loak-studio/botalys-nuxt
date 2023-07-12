@@ -1,6 +1,5 @@
 <script setup>
 const { title, paragraphs, image, breadcrumbLinks } = defineProps({ title: String, paragraphs: Array, image: String, breadcrumbLinks:Array })
-
 </script>
 <template>
     <div class="hero-photo__parent">
@@ -19,7 +18,7 @@ const { title, paragraphs, image, breadcrumbLinks } = defineProps({ title: Strin
                         v-html="paragraph"></p>
                 </div>
                 <figure class="hero-photo__figure">
-                    <img :src="image" alt="">
+                    <nuxt-picture sizes="sm:300px lg:500px" width="559" height="838" :src="image"/>
                 </figure>
             </div>
         </section>

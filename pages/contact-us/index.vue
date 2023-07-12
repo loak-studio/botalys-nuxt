@@ -1,5 +1,4 @@
 <script setup>
-import River from "~/assets/images/river.jpg"
 const title = "Contact us - Botalys"
 useSeoMeta({
   title: title,
@@ -24,7 +23,7 @@ useSeoMeta({
       ]"/>
       <div class="contact__container">
         <figure class="contact__image">
-          <img :src="River" alt="">
+          <nuxt-picture src="/images/river.jpg" alt=""/>
         </figure>
         <div class="contact__contact-form">
           <div class="contact__title-container">

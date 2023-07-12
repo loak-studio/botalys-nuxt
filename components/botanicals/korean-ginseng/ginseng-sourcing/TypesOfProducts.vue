@@ -1,13 +1,8 @@
 <script setup>
-import FreshGinseng from "~/assets/images/illustrations/plants/panax.png"
-import RedGinseng from "~/assets/images/illustrations/plants/red-ginseng.png"
-import WhiteGinseng from "~/assets/images/illustrations/plants/white-ginseng.png"
-import BlackGinseng from "~/assets/images/illustrations/plants/black-ginseng.png"
-
 const plants = [
     {
         label: 'Fresh ginseng',
-        image: FreshGinseng,
+        image: "/images/illustrations/plants/panax.png",
         description: [
             "Often used in traditional food preparations across Asia, fresh ginseng roots are naturally rich in water-soluble precursor ginsenosides forms like Rg1 and Rb1.",
             "Despite it being a great source of vitamins, enzymes and other beneficial nutrients for health, fresh ginseng is a perishable product and is therefore rarely consumed as such."
@@ -15,7 +10,7 @@ const plants = [
     },
     {
         label: 'White ginseng',
-        image: WhiteGinseng,
+        image: "/images/illustrations/plants/red-ginseng.png",
         description: [
             "Sun-drying is the oldest method of processing ginseng. The resulting product, known as white ginseng, is the most common type of ginseng on the Chinese market. ",
             "The process involves a simple drying of the ginseng roots, traditionally in the sun, and removes 75% of their water content. Contrary to other methods, sun-drying does not significantly alter ginsenosides (it just concentrates them), and thus preserves the root’s bioactive composition. "
@@ -23,7 +18,7 @@ const plants = [
     },
     {
         label: 'Red ginseng',
-        image: RedGinseng,
+        image: "/images/illustrations/plants/red-ginseng.png",
         description: [
             "Red ginseng is obtained by steam cooking of the ginseng roots for 1 to 3 cycles. The heat causes the browning (Maillard reaction) of the roots due to their high content in polysaccharides, giving ginseng a characteristic reddish color.",
             "In addition, the root’s bioactive matrix undergoes significant transformations under the effect of heat and water. Precursor ginsenosides like Rg1 and Rb1 are partially converted into more bioactive derivatives, also referred to as rare or noble ginsenosides (Rg3, Rg5 and Rk1). "
@@ -31,7 +26,7 @@ const plants = [
     },
     {
         label: 'Black ginseng',
-        image: BlackGinseng,
+        image: "/images/illustrations/plants/black-ginseng.png",
         description: [
             "Black ginseng is obtained by cooking ginseng roots for between 4 and 9 steam cycles. The higher degree of cooking darkens the roots color to dark black tones and accentuates the degree of bioconversion of common ginsenosides into their bioactive forms, especially dehydrated forms like Rg5 and Rk1. ",
         ]
@@ -74,7 +69,7 @@ const currentPlant = ref(0)
                             currentPlant = index
                         }" class="types-products__button">
                             <figure class="types-products__figure">
-                                <img :src="plant.image" alt="">
+                                <nuxt-picture :src="plant.image" alt=""/>
                             </figure>
 
                             <div @click.stop class="types-products__plant-paragraph-container">

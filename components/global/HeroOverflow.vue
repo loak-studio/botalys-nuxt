@@ -12,7 +12,7 @@ const { links, image, title, paragraphs, top, right, height, width, blendModeLum
                                 --height:${height};
                                 --width:${width};
                 `" class="hero-overflow__figure">
-                    <img :src="image" alt="">
+                    <nuxt-picture :width="width" :height="height" :src="image" alt=""/>
                 </figure>
                 <div class="hero-overflow__text">
                     <h1 class="h1 hero-overflow__title">{{ title }}</h1>

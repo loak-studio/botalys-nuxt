@@ -1,6 +1,4 @@
 <script setup>
-import Brain from "~/assets/images/illustrations/brain.png"
-import River from "~/assets/images/river.jpg"
 import {gsap} from 'gsap'
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 const title = "Ginseng for mental stamina - Botalys"
@@ -41,7 +39,7 @@ onMounted(()=>{
     {
       label:'Ginseng for Mental Stamina', href:'/botanicals/korean-ginseng/ginseng-for-mental-stamina/'
     }
-  ]" :blend-mode-luminosity="true" :image="Brain" title="Korean Ginseng" right="-214px" top="44px" width="597px"
+  ]" :blend-mode-luminosity="true" image="/images/illustrations/brain.png" title="Korean Ginseng" right="-214px" top="44px" width="597px"
     height="895px" :paragraphs="[
       'Korean ginseng (Panax ginseng C.A. Meyer) is the most emblematic herb of traditional Asian Medicine.',
       'And while its reputation as a tonic, aphrodisiac and elixir of longevity dates back several millennia, the benefits of this ancient panacea remain more relevant than ever in the field of medicinal plants.'
@@ -116,7 +114,7 @@ onMounted(()=>{
   </botanicals-korean-ginseng-ginseng-for-mental-stamina-title-with-double-graphs>
   <BotanicalsKoreanGinsengGinsengForMentalStaminaUsageTest/>
   <BotanicalsKoreanGinsengGinsengForMentalStaminaUsageTestGrid/>
-  <text-image :imageSrc="River">
+  <text-image imageSrc="/images/river.jpg">
     <div>
       <Tag color="yellow">Get in touch</Tag>
       <h3 class="h3">Let's go further together</h3>

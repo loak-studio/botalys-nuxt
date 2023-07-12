@@ -104,7 +104,7 @@ onUnmounted(()=>{
             </div>
             <div class="located-europe__numbers">
                 <figure class="located-europe__draw">
-                    <img src="~/assets/images/batiment.png" alt="">
+                    <nuxt-picture width="852" height="356" src="/images/batiment.png" alt=""/>
                 </figure>
                 <div data-number="botanical-explorers" class="located-europe__number-item">
                     <div class="located-europe__dash" />

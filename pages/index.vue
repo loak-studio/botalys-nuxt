@@ -32,7 +32,7 @@
       }
     },
   ]" />
-  <text-image :imageSrc="River">
+  <text-image imageSrc="/images/river.jpg">
     <div>
       <Tag color="yellow">Get in touch</Tag>
       <h3 class="h3">Let's go further together</h3>
@@ -47,7 +47,6 @@
 import "../assets/styles/index.css"
 import testasset from "~/assets/images/footer-jungle.png"
 import testtwo from "~/assets/images/butterfly.png"
-import River from "~/assets/images/river.jpg"
 definePageMeta({ layout: false })
 const title = "Botalys - Seek wild precision"
 const description = "BOTALYS uses an innovative Biomimetic Indoor Farming technology to recreate the ideal wild conditions for rare botanicals to grow in. We develop pristine &#38; potent botanical ingredients for the Nutraceutical and Cosmetic industries."

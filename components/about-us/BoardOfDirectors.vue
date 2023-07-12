@@ -1,52 +1,44 @@
 <script setup>
-import PierreAntoine from "~/assets/images/team/laurent-perignon.jpg"
-import Laurent from "~/assets/images/team/laurent-perignon.jpg"
-import Sylvie from "~/assets/images/team/sylvie-defrere.jpg"
-import Terence from "~/assets/images/team/terence-welby.jpg"
-import Rene from "~/assets/images/team/rene-cuvelier.jpg"
-import Nicolas from "~/assets/images/team/nicolas-houyoux.jpg"
-import Valentine from "~/assets/images/team/valentine-willems.jpg"
-import JoinUs from "~/assets/images/team/laurent-perignon.jpg"
 const members = [
     {
         name: 'Pierre-Antoine Mariage',
         job: 'CEO & Co-founder',
-        picture: PierreAntoine
+        picture: "/images/team/laurent-perignon.jpg"
     },
     {
         name: 'Laurent Pérignon',
         job: 'Finance Director',
-        picture: Laurent
+        picture: "/images/team/laurent-perignon.jpg"
     },
     {
         name: 'Sylvie Defrère',
         job: 'R&D Director',
-        picture: Sylvie
+        picture: "/images/team/sylvie-defrere.jpg"
     },
     {
         name: 'Terence Welby',
         job: 'Sales Director',
-        picture: Terence
+        picture: "/images/team/terence-welby.jpg"
     },
     {
         name: 'René Cuvelier',
         job: 'Production Director',
-        picture: Rene
+        picture: "/images/team/rene-cuvelier.jpg"
     },
     {
         name: 'Nicolas Houyoux',
         job: 'Marketing Director',
-        picture: Nicolas
+        picture: "/images/team/nicolas-houyoux.jpg"
     },
     {
         name: 'Valentine Willems',
         job: 'HR Director',
-        picture: Valentine
+        picture: "/images/team/valentine-willems.jpg"
     },
     {
         name: 'Join us',
         job: 'to explore new horizons',
-        picture: PierreAntoine
+        picture: "/images/team/valentine-willems.jpg"
     }
 ]
 
@@ -76,7 +68,7 @@ const removePopup = () => {
                 <li class="board-directors__member" v-for="(member, index) in members" :key="index">
                     <button @click="showPopup(member)" class="board-directors__button">
                         <figure class="board-directors__picture">
-                            <img :src="member.picture" alt="" />
+                            <nuxt-picture width="219" height="258" :src="member.picture" alt="" />
                         </figure>
                         <figcaption class="board-directors__caption">
                             <span class="h6">{{ member.name }}</span>

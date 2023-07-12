@@ -1,51 +1,45 @@
 <script setup>
 import { register } from 'swiper/element/bundle';
-import Brain from "~/assets/images/illustrations/brain.png"
-import Cells from "~/assets/images/illustrations/cells.png"
-import Intestine from "~/assets/images/illustrations/intestine.png"
-import Liver from "~/assets/images/illustrations/liver.png"
-import Uterus from "~/assets/images/illustrations/uterus.png"
-import Banana from "~/assets/images/illustrations/banana.png"
 const items = [
     {
         label: 'Brain Health',
         href: '#',
-        image: Brain
+        image: "/images/illustrations/brain.png"
     },
     {
         label: 'Cellular Metabolism',
         href: '#',
-        image: Cells
+        image: "/images/illustrations/cells.png"
     },
     {
         label: 'Women\'s Health',
         href: '#',
-        image: Uterus
+        image: "/images/illustrations/uterus.png"
     },
     {
         label: 'Gut Health',
         href: '#',
-        image: Intestine
+        image: "/images/illustrations/intestine.png"
     },
     {
         label: 'Men\'s Health',
         href: '#',
-        image: Banana
+        image: "/images/illustrations/banana.png"
     },
     {
         label: 'Hepatic Health',
         href: '#',
-        image: Liver
+        image: "/images/illustrations/liver.png"
     },
     {
         label: 'Cardiovascular Health',
         href: '#',
-        image: Brain
+        image: "/images/illustrations/brain.png"
     },
     {
         label: 'Sports Nutrition',
         href: '#',
-        image: Brain
+        image: "/images/illustrations/brain.png"
     },
 ]
 
@@ -111,7 +105,7 @@ const slidePrev = () => {
                 <swiper-container class="ginseng-health__slider" ref="swiperEl" init="false">
                     <swiper-slide class="ginseng-health__slide" v-for="(item, index) in items" :key="index">
                         <figure class="ginseng-health__figure">
-                            <img :src="item.image" alt="">
+                            <nuxt-picture :src="item.image" alt=""/>
                         </figure>
                         <BotalysButton color="yellow" :href="item.href">{{ item.label }}</BotalysButton>
                     </swiper-slide>

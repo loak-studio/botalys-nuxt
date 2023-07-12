@@ -1,6 +1,4 @@
 <script setup>
-import Ginseng from "~/assets/images/ginseng-flower.png"
-import Moutain from "~/assets/images/korean-ginseng-moutain.jpeg"
 const title = "Korean Ginseng - Botalys"
 useSeoMeta({
   title: title,
@@ -17,7 +15,7 @@ useSeoMeta({
       label:'Korean Ginseng', href:'#'
     }
   ]"
-  :image="Ginseng"
+  image="/images/ginseng-flower.png"
   title="Korean Ginseng"
   right="-96px"
   top="71px"
@@ -28,7 +26,7 @@ useSeoMeta({
     'And while its reputation as a tonic, aphrodisiac and elixir of longevity dates back several millennia, the benefits of this ancient panacea remain more relevant than ever in the field of medicinal plants.'
   ]"
   />
-  <text-image :imageSrc="Moutain">
+  <text-image imageSrc="/images/korean-ginseng-moutain.jpeg">
     <div>
       <Tag color="yellow">Ginseng supply</Tag>
       <h3 class="h3">A Sourcing Nightmare</h3>

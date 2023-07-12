@@ -44,7 +44,7 @@ onMounted(()=>{
       </div>
       <Icon :color="colors.mikadoYellow" class="index-discover__icon"/>
       <figure class="index-discover__image">
-        <img src="~/assets/images/butterfly.png" alt="">
+        <nuxt-picture  sizes="xs:320px sm:640px lg:559px" width="559" height="838" src="/images/butterfly.png" alt=""/>
       </figure>
     </div>
   </section>

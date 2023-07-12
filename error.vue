@@ -1,5 +1,4 @@
 <script setup>
-import BackgroundImage from "~/assets/images/404.png"
 definePageMeta({ layout: false })
 const title = "Page not found - Botalys"
 useSeoMeta({
@@ -30,7 +29,7 @@ useHead({
     <div class="error-page">
         <div class="error-page__container" >
             <figure class="error-page__background">
-                <img :src="BackgroundImage" alt="">
+                <nuxt-picture sizes="xs:320px sm:640px lg:1920px" width="1920" height="1080" src="/images/404.png" alt=""/>
             </figure>
             <Header :is-frontpage="true" />
             <div  class="error__parent">

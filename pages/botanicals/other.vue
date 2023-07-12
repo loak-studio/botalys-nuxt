@@ -1,7 +1,4 @@
 <script setup>
-import Plant from "~/assets/images/illustrations/plant.png"
-import River from "~/assets/images/river.jpg"
-
 const title = "Other botanicals - Botalys"
 useSeoMeta({
   title: title,
@@ -16,12 +13,12 @@ useSeoMeta({
     <hero-with-illustration :links="[{
         href: '#',
         label: 'Other botanicals'
-    },]" :image="Plant" title="Other botanicals" :paragraphs="[
+    },]" image="/images/river.jpg" title="Other botanicals" :paragraphs="[
     'The R&D department at BOTALYS is currently working on the development of several other rare medicinal plants for commercialization.'
 ]" />
     <BotanicalsKoreanGinsengOtherBlackCard/>
     <BotanicalsKoreanGinsengOtherDevelopmentSteps/>
-    <text-image :image-src="River">
+    <text-image image-src="/images/river.jpg">
         <div>
             <Tag color="yellow">Get in touch</Tag>
             <h3 class="h3">Let's go further together</h3>

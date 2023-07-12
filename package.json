@@ -9,8 +9,9 @@
     "postinstall": "nuxt prepare"
   },
   "devDependencies": {
+    "@nuxt/image": "^1.0.0-rc.1",
     "@types/node": "^18",
-    "nuxt": "^3.6.1"
+    "nuxt": "^3.6.2"
   },
   "dependencies": {
     "countup.js": "^2.7.0",
