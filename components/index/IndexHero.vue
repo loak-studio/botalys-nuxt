@@ -110,9 +110,9 @@ onUnmounted(()=>{
 <template>
   <section class="hero">
     <div class="hero__background">
-      <video loading="lazy" autoplay muted loop src="~/assets/jungle.mp4"></video>
+      <video autoplay muted loop src="~/assets/jungle.mp4"></video>
       <figure>
-        <nuxt-picture loading="lazy" src="/images/river-2.jpeg" alt=""/>
+        <nuxt-picture src="/images/river-2.jpeg" alt=""/>
       </figure>
     </div>
     <Header class="hero__header" :isFrontpage="true" />
