@@ -13,5 +13,8 @@ export default defineNuxtConfig({
         return tag.startsWith('swiper-')
       }
     }
+  },
+  experimental:{
+    payloadExtraction:false
   }
 })
