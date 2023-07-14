@@ -184,7 +184,7 @@ onMounted(() => {
 
 .usage-grid__value {
     font-family: 'bodoni-pt-variable';
-    font-size: 136px;
+    font-size: 100px;
 }
 
 @media (max-width: 1100px) {
